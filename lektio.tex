@@ -1,0 +1,921 @@
+\documentclass[beamer,11pt,aspectratio=169]{beamer}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage[finnish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{textgreek}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tikz-feynman}
+\usepackage{animate}
+\usepackage{xmpmulti}
+\usepackage{hyperref}
+\usepackage{luacode}
+\usepackage{unicode-math}
+
+%\usepackage[short]{journalnames}
+\usepackage{scpcolors}
+
+%  BIBLIOGRAPHY
+\usepackage[backend = biber,
+           language = english,
+            citestyle = authoryear,
+            bibstyle = authortitle,
+            sorting = nyt,
+            giveninits = true,
+            minbibnames = 1,
+            mincitenames = 1,
+            maxbibnames = 2,
+            maxcitenames = 2,
+            hyperref = true,
+            arxiv = abs,
+            uniquename = false]{biblatex}
+
+\AtEveryBibitem{\clearfield{title}\clearfield{doi}\clearfield{issn}\clearfield{url}\clearfield{primaryClass}}
+
+\addbibresource{zebra_seminar.bib}
+
+\renewcommand*{\bibnamedash}{\rule[0.48ex]{3em}{0.14ex}\space}
+\renewcommand*{\bibnamedelimi}{\hspace{0.125em}}
+\renewcommand*{\mkbibacro}[1]{#1}
+\renewbibmacro{in:}{}
+
+\newcommand{\journaltitlecolor}{grey1}
+
+\pgfplotsset{compat=newest}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{pgfplots.groupplots}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{external}
+\usepgflibrary{shadings}
+
+\usepgfplotslibrary{colorbrewer}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{extracolormaps}
+
+%\pgfplotsset{legend image code/.code={\draw[#1](0,-0.0125)rectangle(0.06,0.0225);}}
+
+%  vector differential operators
+\newcommand{\Nabla}{\bm{\nabla}}
+\newcommand{\Div}{\Nabla\cdot}
+\newcommand{\Curl}{\Nabla\times}
+
+%  derivatives
+\newcommand{\tder}[2]{d#1/d#2}
+\newcommand{\der}[2]{\frac{d#1}{d#2}}
+\newcommand{\dder}[2]{\frac{d^2#1}{d#2^2}}
+\newcommand{\dern}[3]{\frac{d^{#3}#1}{d#2^{#3}}}
+\newcommand{\ddder}[3]{\frac{d^2#1}{d#2d#3}}
+\newcommand{\inder}[2]{\frac{\mathfrak{d}#1}{\mathfrak{d}#2}}
+
+%  partial derivatives
+\newcommand{\pder}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\pdder}[2]{\frac{\partial^2#1}{\partial#2^2}}
+\newcommand{\ppder}[3]{\frac{\partial^2#1}{\partial#2\partial#3}}
+\newcommand{\pdern}[3]{\frac{\partial^{#3}#1}{\partial#2^{#3}}}
+\newcommand{\tpder}[2]{\partial#1/\partial#2}
+
+%  miscellaneous
+\newcommand{\unitv}[1]{\hat{#1}}
+\newcommand{\difd}{\,d}
+\newcommand{\mean}[1]{\left\langle#1\right\rangle}
+\newcommand{\smean}[1]{\langle#1\rangle}
+\newcommand{\vblank}{\vspace{1pc}}
+\newcommand{\imp}[1]{\textsf{#1}}
+\newcommand{\needcite}{\textcolor{darkred}{[citation needed]}}
+\newcommand{\cited}[1]{\textcolor{darkred}{[#1]}}
+\newcommand{\lssc}[1]{\textls[70]{\textsc{#1}}}
+\newcommand{\reffig}[1]{Fig. \ref{#1}}
+\newcommand{\transp}{\mathsf{T}}
+\newcommand{\mand}{\quad\text{and}\quad}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\braket}[2]{\left\langle#1\middle|#2\right\rangle}
+\newcommand{\brakett}[3]{\left\langle#1\middle|#2\middle|#3\right\rangle}
+\newcommand{\frgn}[1]{\textit{#1}}
+\newcommand{\faml}[1]{#1}
+\newcommand{\name}[1]{\textit{#1}}
+\newcommand{\normal}{\trianglelefteq}
+\newcommand{\zmod}[1]{\mathbb{Z}/{#1}\mathbb{Z}}
+\newcommand{\bsf}[1]{\bm{\mathsf{#1}}}
+\newcommand{\cat}[1]{\mathsf{#1}}
+\newcommand{\secnote}[1]{\textit{\color{darkreddish} #1}\par\noindent}
+\newcommand{\important}[1]{{\sffamily #1}}
+\newcommand{\nothing}[1]{}
+
+%  spacing
+\newcommand{\nen}{\hspace{-5pt}}
+\newcommand{\nquad}{\hspace{-10pt}}
+\newcommand{\nqquad}{\hspace{-20pt}}
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\chara}{char}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\rad}{rad}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Ant}{Ant}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Lie}{Lie}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\tdet}{det}
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\Br}{Br}
+\DeclareMathOperator{\erf}{erf}
+
+\definecolor{grey}{gray}{0.8}
+\definecolor{grey1}{gray}{0.05}
+\definecolor{grey2}{gray}{0.8}
+\definecolor{grey3}{gray}{0.5}
+\definecolor{lightred}{RGB}{90, 50, 50}
+\definecolor{darkerred}{RGB}{90, 10, 10}
+\definecolor{darkred}{rgb}{0.3,0,0}
+\definecolor{somered}{rgb}{0.7,0,0}
+\definecolor{grape}{RGB}{76,40,130}
+\definecolor{frenchviolet}{Hsb}{279,0.97,0.4}
+\definecolor{mardigras}{Hsb}{301,1,0.2}
+\definecolor{indigo}{Hsb}{255,1,0.4}
+\definecolor{mediumblue}{Hsb}{240,0.2,0.8}
+\definecolor{indigobright}{Hsb}{255,0.8,0.65}
+\definecolor{turqoise}{RGB}{91, 146, 121}
+
+\definecolor{detector}{Hsb}{111,0.6,0.65}
+\definecolor{fieldtheory}{Hsb}{348,0.9,0.75}
+\definecolor{halo}{Hsb}{255,0.65,0.75}
+
+
+
+\definecolor{proton-red}{RGB}{212, 65, 65}
+
+\newcommand{\shadecolor}{indigo}
+\newcommand{\defaulttextcolor}{white!70!black}
+\newcommand{\defaultbgcolor}{grey1}
+
+\setmainfont{Noto Sans}[
+    BoldFont = Noto Sans Bold,
+    ItalicFont = Noto Sans Italic,
+    BoldItalicFont = Noto Sans Bold Italic
+]
+\setsansfont{Noto Sans}[
+    Ligatures = {
+        NoCommon, NoDiscretionary, NoHistoric, NoRequired, NoContextual
+    }
+]
+\setmonofont{Noto Mono}
+\setmathfont{Noto Sans Math}
+
+% Semibold fonts
+\newfontface\sbstyle{Noto Sans Semibold}
+
+% Some special styles
+%\newcommand{\titlestyle}{\sbstyle}
+\newcommand{\annotatestyle}{\sbstyle}
+%\newcommand{\headstyle}{\sbstyle}
+%\newcommand{\subheadstyle}{\sbstyle}
+%\newcommand{\subsubheadstyle}{\sbstyle}
+
+% Additional commands for typesetting semibold (sb) and uppercase (uc) text in
+% serif and sans serif (sf) style
+\newcommand{\textsb}[1]{{\sbstyle #1}}
+\newcommand{\textuc}[1]{\textls[70]{#1}}
+
+%\SetTblrStyle{remark-tag}{font=\itshape}
+%\SetTblrStyle{remark-sep}{font=\itshape}
+%\SetTblrStyle{caption-tag}{font=\bfseries}
+%\SetTblrStyle{caption}{halign=l}
+
+% Redefine vector command to use bold italics
+%\renewcommand{\vec}[1]{\symbfit{#1}}
+
+% Special typesetting for annotating plots
+\newcommand{\plotlineannotation}[1]{{\tiny\annotatestyle #1}}
+
+\renewcommand*{\emph}[1]{\textit{#1}}
+
+\setbeamersize{text margin left=5mm,text margin right=5mm} 
+
+\setbeamertemplate{footline}[text line]{%
+  \parbox{\linewidth}{\insertshortauthor\vspace{-5pt}\hfill\insertframenumber\vspace{5pt}}}
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{palette primary}{fg=\defaulttextcolor}
+\setbeamercolor{palette secondary}{fg=\defaulttextcolor}
+\setbeamercolor{palette tertiary}{fg=\defaulttextcolor}
+\setbeamercolor{palette quarternary}{fg=\defaulttextcolor}
+\setbeamercolor{palette sidebar primary}{fg=\defaulttextcolor}
+\setbeamercolor{palette sidebar secondary}{fg=\defaulttextcolor}
+\setbeamercolor{palette sidebar tertiary}{fg=\defaulttextcolor}
+\setbeamercolor{palette sidebar quarternary}{fg=\defaulttextcolor}
+\setbeamercolor{palette primary}{fg=\defaulttextcolor}
+\setbeamercolor{palette primary}{fg=\defaulttextcolor}
+\setbeamercolor{palette primary}{fg=\defaulttextcolor}
+
+\setbeamercolor{normal text}{bg=\defaultbgcolor,fg=\defaulttextcolor}
+\setbeamercolor{titlelike}{fg=\defaulttextcolor}
+\setbeamercolor{alerted text}{fg=\defaulttextcolor}
+\setbeamercolor{example text}{fg=\defaulttextcolor}
+\setbeamercolor{structure}{fg=\defaultextcolor}
+%\setbeamercolor{separation line}{fg=grey1,bg=grey1}
+%\setbeamercolor{fine separation line}{fg=grey1,bg=grey1}
+
+\setbeamercolor{title page}{fg=\defaulttextcolor}
+\setbeamercolor{title}{fg=\defaulttextcolor}
+\setbeamercolor{subtitle}{fg=\defaulttextcolor}
+\setbeamercolor{author}{fg=\defaulttextcolor}
+\setbeamercolor{institute}{fg=\defaulttextcolor}
+\setbeamercolor{date}{fg=\defaulttextcolor}
+
+\setbeamercolor{part page}{fg=\defaulttextcolor}
+\setbeamercolor{section page}{fg=\defaulttextcolor}
+\setbeamercolor{subsection page}{fg=\defaulttextcolor}
+
+\setbeamercolor{section in toc}{fg=\defaulttextcolor}
+\setbeamercolor{subsection in toc}{fg=\defaulttextcolor}
+\setbeamercolor{subsubsection in toc}{fg=\defaulttextcolor}
+\setbeamercolor{section in toc shaded}{fg=\defaulttextcolor}
+\setbeamercolor{subsection in toc shaded}{fg=\defaulttextcolor}
+\setbeamercolor{subsubsection in toc shaded}{fg=\defaulttextcolor}
+\setbeamercolor{section number projected}{fg=\defaulttextcolor}
+
+\setbeamercolor{bibliography entry title}{fg=\defaulttextcolor}
+\setbeamercolor{bibliography entry location}{fg=\defaulttextcolor}
+\setbeamercolor{bibliography entry author}{fg=\defaulttextcolor}
+\setbeamercolor*{bibliography entry note}{fg=\defaulttextcolor}
+\setbeamercolor{bibliography item}{fg=\defaulttextcolor}
+
+\setbeamercolor{note page}{fg=\defaulttextcolor}
+
+\setbeamercolor{background canvas}{fg=\defaultbgcolor}
+\setbeamercolor{background}{bg=\defaultbgcolor}
+
+\setbeamercolor{headline}{fg=\defaulttextcolor}
+\setbeamercolor{footline}{fg=\defaulttextcolor}
+\setbeamercolor{page number in head}{fg=\defaulttextcolor}
+\setbeamercolor{page number in foot}{fg=\defaulttextcolor}
+
+\setbeamercolor{button}{fg=\defaulttextcolor}
+
+\setbeamercolor{structure}{fg=\defaulttextcolor}
+
+%\setbeamercolor{}
+
+\setbeamertemplate{itemize item}{\color{\defaulttextcolor}\textbullet}
+\setbeamertemplate{itemize subitem}{\color{\defaulttextcolor}\textbullet}
+\setbeamertemplate{itemize subsubitem}{\color{\defaulttextcolor}\textbullet}
+\setbeamertemplate{enumerate item}{\color{\defaulttextcolor}\arabic{enumi})}
+\setbeamertemplate{bibliography item}
+
+\renewcommand*{\bibfont}{\scriptsize}
+
+\newcommand{\defaultaccentcolor}{turqoise}
+\hypersetup{
+    colorlinks=true,
+    citecolor=\defaulttextcolor,
+    linkcolor=\defaultaccentcolor,
+    urlcolor=\defaultaccentcolor
+}
+
+\newcommand{\scale}{0.7}
+\tikzset{
+    box/.pic={
+        \fill[fill opacity=1.0](0,0)--(0.866,0.5)--(0,1)--(-0.866,0.5)--cycle;
+        \fill[fill opacity=0.0](0,0)--(-0.866,0.5)--(-0.866,-0.5)--(0,-1)--cycle;
+        \fill[fill opacity=0.5](0,0)--(0,-1)--(0.866,-0.5)--(0.866,0.5)--cycle;
+    }
+}
+
+\tikzset{
+    hexagon/.pic={
+        \fill[fill opacity=1.0](0.866,0.5)--(0,1)--(-0.866,0.5)--(-0.866,-0.5)--(0,-1)--(0.866,-0.5)--cycle;
+        \fill[fill opacity=0.7](0,0)--(-0.866,0.5)--(-0.866,-0.5)--(0,-1)--cycle;
+        \fill[fill opacity=0.4](0,0)--(0,-1)--(0.866,-0.5)--(0.866,0.5)--cycle;
+    }
+}
+
+\tikzset{
+    cross/.pic={
+        \draw [thick] (0.4,0.4)--(0.1,0.1);
+        \draw [thick] (-0.4,0.4)--(-0.1,0.1);
+        \draw [thick] (0.4,-0.4)--(0.1,-0.1);
+        \draw [thick] (-0.4,-0.4)--(-0.1,-0.1);
+    }
+}
+
+\begin{luacode*}
+
+function mix(x, y, a)
+    return x*(1 - a) + y*a
+end
+
+function hash(n)
+    return math.abs(math.fmod(math.sin(n)*1.0e+4, 1.0))
+end
+
+function noise(x)
+    i = math.floor(x)
+    f = math.fmod(x, 1.0)
+    u = f*f*(3.0 - 2.0*f)
+    return mix(hash(i), hash(i + 1.0), u)
+end
+
+function scaled_noise(x)
+    return 1 - 2.0*noise(x)
+end
+
+function length(x, y)
+    return math.sqrt(x*x + y*y)
+end
+
+function density(xpos, ypos)
+	t = 1.5
+    k = 1.4
+    w = 2.0
+    c = w/k
+    center_x = 1.0
+    center_y = 0.5
+    x = xpos - center_x
+    y = ypos - center_y
+    tp = t - length(x, y)/c
+    ppx = scaled_noise(0.48*tp)
+    ppy = scaled_noise(0.56*tp + 1.0)
+    x = xpos - ppx
+    y = ypos - ppy
+    return math.pow(noise(k*length(x, y) - w*t), 1)
+end
+
+function density2(xpos, ypos)
+    center_x = 0.6
+    center_y = 0.5
+    x = xpos - center_x
+    y = ypos - center_y
+    r = math.sqrt(x*x + 0.5*y*y)
+    res = math.sin(2.0*r)
+    if math.random() < 0.5 then
+        return math.random()*math.pow(res, 10)
+    else
+	    return math.pow(res, 10)
+    end
+end
+
+function print_opacity(i, j, N, M)
+    dens = density2(tonumber(i)/tonumber(N), tonumber(j)/tonumber(M))
+	 tex.print(tostring(dens))
+end
+
+function test(x)
+	y = x:gsub("pt","")
+	return tonumber(y)
+end
+
+function triangle_base(pageheight, N)
+    tex.print(string.format("%f",test(pageheight)*0.03528/tonumber(N)))
+end
+
+function horizontal(pagewidth, pageheight, N)
+    tex.print(string.format("%d",math.ceil((0.5/0.866)*tonumber(N)*test(pagewidth)/test(pageheight))))
+end
+
+function randbin()
+	r = math.random()
+	res = 0
+	if r > 0.5 then
+	    res = 1
+   end
+   tex.print(string.format("%d",res))
+end
+
+function increment(n)
+    tex.print(string.format("%d",tonumber(n) + 1))
+end
+
+function lattice_pos(is, js, scale)
+    i = tonumber(is)
+    j = tonumber(js)
+    xpos = i*scale
+    ypos = j*scale
+    if (i == 2 and j == 2) then
+        xpos = xpos + 0.15
+        ypos = ypos - 0.1
+    end
+    tex.print(string.format("(%f,%f)", xpos, ypos))
+end
+
+function lattice_defects(is, js, scale)
+    i = tonumber(is)
+    j = tonumber(js)
+    xpos = i*scale
+    ypos = j*scale
+    if (i == 1 and j == 3) then
+        xpos = 1.05
+        ypos = 0.35
+    end
+    tex.print(string.format("(%f,%f)", xpos, ypos))
+end
+
+function print_if(opacity)
+	if opacity > 0.02 then
+		tex.print("\\pic[scale=\\scale,color=\\defaultaccentcolor!50!grey1,opacity=\\opacity]at($(current page.north east)-\\scale*1.0*(\\i,0)-\\scale*1.0*(0,\\j)$){cross};")
+	end
+end
+\end{luacode*}
+
+\newcommand{\horizontal}{25}
+\newcommand{\vertical}{14}
+\newcommand{\atomcolor}{black!80!white}
+\newcommand{\atomsize}{1.2mm}
+
+\usebackgroundtemplate{%
+    \hspace*{-14.01mm}
+    \vspace*{-14.01mm}
+    \begin{tikzpicture}[overlay,remember picture]
+        \fill[grey1](current page.north west)rectangle(current page.south east);
+        \nothing{
+            \luadirect{math.randomseed(\insertframenumber)}
+            \foreach \j in {0,1,2,...,\vertical}
+            \foreach \i in {0,1,2,...,\horizontal}{
+                \pgfmathsetmacro{\opacity}{
+                        \luadirect{
+                            print_opacity(\luastring{\i}, \luastring{\j}, \luastring{\horizontal}, \luastring{\vertical})
+                        }
+                    }
+                    \luadirect{print_if(\opacity)}
+            }
+            \fill[blue](1.272,0)circle[radius=0.02];
+            \fill[blue](17.272,0)circle[radius=0.02];
+        }
+    \end{tikzpicture}
+}
+
+\title{Pimeä aine tulevan sukupolven detektoreissa}
+\author{Sebastian Sassi}
+\institute{University of Helsinki}
+\date{6.3.2025}
+
+%\tikzexternalize
+%\tikzset{external/up to date check={md5}}
+
+\pgfplotsset{colormap={accentmap}{color=(\atomcolor) color=(\defaultaccentcolor)}}
+
+
+\pgfplotsset{cycle list/Set2-8}
+
+\newcommand{\darken}[1]{\alt{{\color{\defaulttextcolor!70!black}#1}}{#1}}
+
+% some useful pgf plots keys for working with beamer
+\tikzset{
+    invisible/.style = {opacity = 0, text opacity = 0},
+    visible on/.style = {alt = {#1{}{invisible}}},
+    alt/.code args = {<#1>#2#3}{%
+      \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+    },
+    shade color on/.code args = {<#1>#2!#3}{
+        \alt<#1>{\pgfkeysalso{color=#2!#3!black}}{\pgfkeysalso{color=#2}}
+    },
+    tint color on/.code args = {<#1>#2!#3}{
+        \alt<#1>{\pgfkeysalso{color=#2!#3!white}}{\pgfkeysalso{color=#2}}
+    }
+}
+
+\newcommand{\bubblestyle}{dashdotted}
+\newcommand{\liquidnoblestyle}{solid}
+\newcommand{\semiconductorstyle}{dashed}
+\newcommand{\scintcrystalstyle}{densely dotted}
+
+\newcommand{\naifillcolor}{scp-red-light-1}
+
+\newcommand{\naicolor}{scp-red-dark-1}
+\newcommand{\cawocolor}{scp-purple-dark-1}
+\newcommand{\cfcolor}{scp-green-dark-1}
+\newcommand{\xenoncolor}{scp-orange-dark-1}
+\newcommand{\argoncolor}{scp-brown-dark-1}
+\newcommand{\gecolor}{scp-blue-dark-1}
+\newcommand{\sicolor}{scp-grey-dark-1}
+
+\newcommand{\wccolor}{scp-orange-dark-1}
+\newcommand{\diamondcolor}{scp-green-dark-1}
+\newcommand{\siccolor}{scp-purple-dark-1}
+\newcommand{\sapphirecolor}{scp-red-dark-1}
+\newcommand{\wcolor}{scp-brown-dark-1}
+
+\newcommand{\nufogcolor}{scp-grey-dark-4}
+
+\newcommand{\ppcnocolor}{scp-blue-dark-1}
+\newcommand{\lineneutrinocolor}{scp-orange-dark-1}
+\newcommand{\hepbcolor}{scp-grey-dark-1}
+\newcommand{\atmocolor}{scp-purple-dark-1}
+\newcommand{\dsnbreactorcolor}{scp-grey-light-2}
+
+\newcommand{\primarylinecolor}{scp-blue-dark-1}
+\newcommand{\secondarylinecolor}{scp-orange-dark-1}
+
+\newcommand{\infernoaxiscolor}{scp-grey-light-3}
+
+\newcommand{\darkmarkcolor}{scp-grey-dark-4}
+
+\newcommand{\plotbgcolor}{scp-grey-light-2!50!white}
+\newcommand{\plotfgcolor}{white}
+
+\newcommand{\distellipselinecolor}{scp-green-dark-2}
+
+% pgf plots styles
+\pgfplotsset{
+    /pgfplots/xlabel near ticks/.style = {
+        /pgfplots/every axis x label/.style = {
+            at = {(ticklabel cs:0.5)},
+            anchor = near ticklabel,
+            font = \scriptsize
+        }
+    },
+    every tick/.append style = {color = \defaulttextcolor},
+    every axis/.append style = {
+        color = \defaulttextcolor,
+        xlabel style = {font = \scriptsize},
+        ylabel style = {font = \scriptsize},
+        tick label style = {font = \tiny},
+        title style = {font = \scriptsize}
+    },
+    every colorbar horizontal post/.append style = {
+        xtick style = {opacity = 0.0},
+    },
+    every axis plot post/.append style = {mark size = 1.0pt}
+}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Maailankaikkeuden koostumus}
+    \nothing{
+    \begin{itemize}
+        \item Vain noin 20\% maailmankaikkeuden massasta on näkyvää ainetta (tähdet, planeetat, galaksit, ihmiset, jne.)
+        \item 80\% on pimeää ainetta, jonka koostumusta ei tunneta
+        \item Pimeä aine ei säteile. Se voidaan havaita vain sen painovoiman kautta.
+    \end{itemize}
+    }
+    \begin{tikzpicture}
+        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -7cm) rectangle (12.445cm, 0);
+        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -1.036cm) rectangle (2.489cm, 0);
+        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -7cm) rectangle (2.489cm, -1.036cm);
+        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (2.489cm, -7cm) rectangle (12.445cm, 0);
+
+        \node at (2.489cm, -1.036cm) [anchor = south east, \defaultbgcolor] {\tiny 1.4\%};
+        \node at (2.489cm, -7cm) [anchor = south east, \defaultbgcolor] {\footnotesize 18.6\%};
+        \node at (12.445cm, -7cm) [anchor = south east, \defaultbgcolor] {\large 80\%};
+
+        \node at (1.2445cm, -0.518cm) [\defaultbgcolor] {\footnotesize Galakseja};
+        \node at (1.2445cm, -3.759cm) [\defaultbgcolor] {\parbox[][][c]{2.489cm}{\center\footnotesize Galaksien\\ välistä kaasua}};
+        \node at (7.467cm, -3.5cm) [\defaultbgcolor] {\large Pimeää ainetta};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Galaksien pyörimisnopeus}
+    \nothing{
+        \begin{itemize}
+            \item 1970-luvulla tutkijat mittasivat galaksien pyörimisnopeuksia
+            \item Jos galaksin koko on galaksin näkyvässä osassa, tähdet kaukana galaksin keskustasta kiertävät hitaammin
+            \item Nopeudet reunalla kuitenkin odotettua suurempia
+            \item Suuri osa galaksin massasta näkyvän reunan ulkopuolella
+        \end{itemize}
+    }
+    \begin{tikzpicture} [
+        speed arrow/.style = {
+            -stealth,
+            line width = 0.7mm
+        }
+    ]
+        %\node[inner sep=0pt] (coma cluster) at (0,0) {\includegraphics[width=8cm, angle=90]{coma_cluster_transparent_small.png}};
+        \node[inner sep=0pt] (galaxy) at (0,0) {\includegraphics[width=8cm, angle=90]{milky_way_2_transparent_small.png}};
+        \draw[speed arrow] (galaxy) +(-90:3.5cm) arc[radius = 3.5cm, start angle = -90, end angle = -100];
+        \draw[speed arrow] (galaxy) +(-90:3.0cm) arc[radius = 3.0cm, start angle = -90, end angle = -110];
+        \draw[speed arrow] (galaxy) +(-90:2.5cm) arc[radius = 2.5cm, start angle = -90, end angle = -120];
+
+        \draw[speed arrow] (galaxy) +(-90:3.5cm) arc[radius = 3.5cm, start angle = -90, end angle = -116];
+        \draw[speed arrow] (galaxy) +(-90:3.0cm) arc[radius = 3.0cm, start angle = -90, end angle = -118];
+        \draw[speed arrow] (galaxy) +(-90:2.5cm) arc[radius = 2.5cm, start angle = -90, end angle = -120];
+        %\node[inner sep=0pt] (galaxy) at (8cm,2cm) {\includegraphics[width=6cm{bullet_cluster_transparent_small.png}};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pimeä aine Maan läheisyydessä}
+    \nothing{
+    \begin{itemize}
+        \item Linnunrata lepää pimeästä aineesta koostuvan pilven keskellä
+        \item Aurinko kiertää Linnunradan keskusta noin 230 km/s
+        \item Maa kiertää Aurinkoa noin 30 km/s
+        \item Maahan osuu jakuvasti pimeän aineen ``tuuli'', jonka nopeus vaihtelee vuoden ympäri Maan liikeradan vuoksi
+        \item Maasta katsottuna tuuli tulee Joutsenen tähtikuvion suunnalta
+    \end{itemize}
+    }
+    \nothing {
+    \begin{itemize}
+        \item Maan läpi kulkee noin 16 grammaa pimeää ainetta joka sekunti
+        \item Maan liikkeen takia maahan osuvan pimeän aineen määrä vaihtelee vuoden ympäri
+        \item Vuotuinen vaihtelu yksi tärkeimmistä todisteista mahdollisesta pimeän aineen löydöstä
+    \end{itemize}
+    }
+    \begin{tikzpicture}[
+        guide line/.style = {color = white!30!transparent, very thin},
+        speed arrow/.style = {-stealth, very thick}
+    ]
+        \coordinate (dm halo) at (0,0);
+        \coordinate (milky way) at (5cm,0);
+        \coordinate (sun) at (10cm,0);
+
+        \shade[
+                shading = radial,
+                inner color = scp-purple-dark-2!70!\defaultbgcolor,
+                outer color = \defaultbgcolor]
+            (dm halo) circle [radius=2.5cm];
+        \node[inner sep = -5pt]
+            (smol mw) at (dm halo) {
+                \includegraphics[width = 1.5cm]{
+                    milky_way_transparent_crop_small.png}};
+
+        \node at ($(dm halo) + (0, 1.2cm)$) {\tiny Pimeää ainetta};
+        %\draw [
+        %        decorate,
+        %        decoration = {
+        %            text along path,
+        %            text = {|\tiny\color{\defaulttextcolor}|Pimeää ainetta}, 
+        %            reverse path}]
+        %    (dm halo) circle [radius = 1.2cm, rotate = 125];
+
+        \node (mw annot) at ($(dm halo) + (-1.5cm, -1cm)$) {\tiny Linnunrata};
+        \draw[-stealth] (mw annot) to[out = 90, in = 180] (smol mw);
+
+        \node[inner sep = -10pt] at (milky way) {
+            \includegraphics[width = 6cm]{
+                milky_way_transparent_crop_small.png}};
+        \draw[speed arrow] (milky way) +(-90:1cm) arc [
+                    start angle = -90, end angle = -170, radius = 1cm];
+        \draw[
+                transparent,
+                decorate,
+                decoration = {
+                    text along path,
+                    text = {|\tiny\color{\defaulttextcolor}|230 km/s},
+                    reverse path}]
+            ($(milky way) + (-70:1.3cm)$) arc [
+                    start angle = -70, end angle = -150, radius = 1.3cm];
+        
+        \node[inner sep = 0pt] at (sun) {
+            \includegraphics[width = 1cm]{sun_transparent.png}};
+        \draw[very thin, white!30!transparent] (sun) circle [radius = 2cm];
+        \draw[speed arrow] (sun) +(105:2.5cm) arc [radius = 2.5cm, start angle = 105, end angle = 75] node[above, pos = 0.5] {\tiny 30 km/s};
+        \draw[speed arrow] (sun) +(-75:2.5cm) arc [radius = 2.5cm, start angle = -75, end angle = -105];
+        \node[inner sep = 0pt] (earth down) at ($(sun) + (-90:2cm)$) {
+            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
+        \node[inner sep = 0pt] (earth up) at ($(sun) + (90:2cm)$) {
+            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
+
+        \draw[guide line] (dm halo) circle [radius = 0.4cm];
+        \draw[guide line] (milky way) circle [radius = 2cm];
+        \draw[guide line]
+            ($(milky way) + (110:2cm)$) -- ($(dm halo) + (110:0.4cm)$);
+        \draw[guide line]
+            ($(milky way) + (-110:2cm)$) -- ($(dm halo) + (-110:0.4cm)$);
+        \draw[guide line] (sun) circle [radius = 2.3cm];
+        \draw[guide line]
+            ($(milky way) + (-90:1cm)$) -- ($(sun) + (130:2.3cm)$);
+        \draw[guide line]
+            ($(milky way) + (-90:1cm)$) -- ($(sun) + (-105:2.3cm)$);
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pimeän aineen tuuli}
+    \nothing{
+        \begin{itemize}
+            \item Pimeä aine tulee maata kohti Joutsenen tähdistön suunnalta
+        \end{itemize}
+    }
+    \begin{tikzpicture}[
+        small circle/.style={radius=1pt}
+    ]
+        \begin{axis}[
+            axis lines = none,
+            width = 16cm,
+            height = 8cm,
+            xmin = -2,
+            xmax = 2,
+            ymin = 0,
+            ymax = 2,
+            xtick = \empty,
+            ytick = \empty
+        ]
+            \node at (axis cs:0,0) [opacity = 0.5]{
+                \includegraphics[width=16cm]{directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png}
+            };
+
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/horizontal_line_0.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/horizontal_line_1.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/horizontal_line_2.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/horizontal_line_3.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/horizontal_line_4.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/vertical_line_0.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/vertical_line_1.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/vertical_line_2.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/vertical_line_3.dat};
+            \addplot+ [mark = none, solid, color = black!80!white]
+                table {star_map/vertical_line_4.dat};
+            \draw[color = black!80!white] (0,0) circle [radius=2];
+
+            \addplot+[mark = *, mark color = white, color=white]
+                table {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+                node [pos = 0.5, anchor = east, color = \defaulttextcolor] {\tiny Joutsen};
+            \addplot+[mark = *, mark color = white, color=white]
+                table {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat} 
+                node [pos = 0.5, anchor = west, color = \defaulttextcolor] {\tiny Otava};
+            \addplot+[mark = *, mark color = white, color=white]
+                table {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat} 
+                node [pos = 0.5, anchor = north, color = \defaulttextcolor] {\tiny Pieni Otava};
+            \addplot+[mark = *, color = red]
+                table {star_map/vlab_2025-03-06-21-00.dat};
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pimeän aineen havaitseminen}
+    \nothing{
+    \begin{itemize}
+        \item Pimeä aine vuorovaikuttaa erittäin heikosti tavallisen aineen kanssa
+        \item Satunnaisesti pimeä aine siroaa atomeista
+        \item Pimeän aineen havaitseminen vaatii suuren määrän atoimeita, joista havaittujen sirontojen energia voidaan laskea
+        \item Havaitsemiseen usitea teknologioita (skintillaatio, ionisaatio, lämpö)
+        \item Kohdemateriaali vaikuttaa sirontaan
+        \begin{itemize}
+            \item Mitä suurempi massa, sitä todennäköisempää sironta
+            \item Toisaalta mitä suurempi massa, sitä vähemmän energiaa siirtyy ytimelle
+        \end{itemize}
+    \end{itemize}
+    }
+    \begin{tikzpicture}[
+        pics/proton/.style = {
+            code = {
+                \shade[ball color = proton-red] circle [radius = 0.3];
+            }
+        },
+        pics/neutron/.style = {
+            code = {
+                \shade[ball color = white] circle [radius = 0.3];
+            }
+        },
+        pics/nucleus/.style = {
+            code = {
+                \begin{scope}[transform shape]
+                \pic at (113.90:0.6676) {proton};
+                \pic at (-177.89:0.6676){proton};
+                \pic at (40.41:0.6676) {proton};
+                \pic at (-21.08:0.6676) {proton};
+                \pic at (-53.65:0.6218) {neutron};
+                \pic at (-98.08:0.6676) {proton};
+                \pic at (8.77:0.6218) {neutron};
+                \pic at (85.01:0.6735) {neutron};
+                \pic at (144.30:0.6865) {neutron};
+                \pic at (-143.41:0.7038) {neutron};
+                \pic at (39.16:0.3022) {neutron};
+                \pic at (-124.90:0.2973) {neutron};
+                \pic at (132.23:0.3037) {proton};
+                \pic at (-29.05:0.2774) {proton};
+                \end{scope}
+            }
+        }
+    ]
+        \node[circle, minimum size=0.8cm] (atom) at (0,0) {} pic[scale = 0.3] {nucleus};
+        \node[circle, ball color = black!70!white] (dm) at (135:1cm) {};
+        \draw[-stealth] (45:1cm) -- (atom.north) -- (dm);
+        \foreach \x in {-1.0, 1.0, 2.0, 3.0, 4.0, 5.0}
+            \pic[scale = 0.3] at (\x,0) {nucleus};
+        
+        \foreach \y in {-1.0, -2.0, -3.0, -4.0, -5.0}
+            \foreach \x in {-1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0}
+                \pic[scale = 0.3] at (\x,\y) {nucleus};
+        %\node[circle, minimum size=0.8cm] at (2,0) {} pic[scale = 0.3] {nucleus};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pimeän aineen havaitseminen}
+    \nothing{
+        \begin{itemize}
+            \item Viimeaikoina parhaiten menestyneet kokeet käyttävät nestemäistä xenon-jalokaasua
+            \item Vaihtoehtona kiinteät kristalliset kohdemateriaalit
+        \end{itemize}
+    }
+    \begin{tikzpicture} [
+        pics/electron/.style = {
+            code = {
+                \draw (0,0) circle [radius = 0.5mm];
+                \draw (-0.35mm,0) -- (0.35mm,0);
+            }
+        },
+        photon/.style = {
+            decorate,
+            decoration = {
+                snake,
+                segment length = 0.9mm,
+                amplitude = 0.4mm,
+                post = lineto,
+                post length = 1mm}, -stealth
+        }
+    ]
+        \node (xenon) at (-0.5cm,-0.3cm) {\includegraphics[width = 4cm]{xenon_cryostat_render_fix.png}};
+        \node[circle, minimum size = 0.1cm, inner sep = 0pt] (atom) at (0,0) {};
+        \draw[-stealth] (45:1cm) -- (atom.north) -- (135:1cm);
+        \draw[-stealth] (atom) -- (-90:1cm);
+        \pic at ($(atom) + (-100:0.8cm)$) {electron};
+        \pic at ($(atom) + (-105:0.6cm)$) {electron};
+        \pic at ($(atom) + (-98:0.48cm)$) {electron};
+        \pic at ($(atom) + (-84:0.64cm)$) {electron};
+        \pic at ($(atom) + (-80:0.35cm)$) {electron};
+        \pic at ($(atom) + (-75:0.48cm)$) {electron};
+        \draw[photon] ($(atom) + (-90:0.5cm) + (0:0.3cm)$) -- ++(-0:0.5);
+        \draw[photon] ($(atom) + (-90:0.5cm) + (-45:0.3cm)$) -- ++(-45:0.5);
+        \draw[photon] ($(atom) + (-90:0.5cm) + (45:0.3cm)$) -- ++(45:0.5);
+        \draw[photon] ($(atom) + (-90:0.5cm) + (135:0.3cm)$) -- ++(135:0.5);
+        \draw[photon] ($(atom) + (-90:0.5cm) + (180:0.3cm)$) -- ++(180:0.5);
+        \draw[photon] ($(atom) + (-90:0.5cm) + (-145:0.3cm)$) -- ++(-145:0.5);
+        \coordinate (crystal) at (6.0cm, 0);
+        %\node at (crystal) {
+        %    \includegraphics[width = 3cm]{cresst_detector_crop.png}};
+        \node at (crystal) {
+            \includegraphics[width = 6cm]{edelweiss_bolo.jpg}};
+        \node at (crystal) [opacity = 0.7]{
+            \includegraphics[width = 6cm]{edelweiss_bolo_mask.png}};
+        %\fill[\defaultbgcolor, opacity = 0.7]
+        %    (crystal) +(0.4386cm, 0.5714cm)
+        %        -- +(-0.1329cm, 0.7143cm)
+        %        -- +(-0.3143cm, 0.6957cm)
+        %        -- +(-0.3143cm, -0.5429cm)
+        %        -- +(-0.0571cm, -0.620cm)
+        %        -- +(0.4386cm, -0.5571cm)
+        %        -- +(0.4386cm, 0.5714cm)
+        %        +(-2cm,-2cm) rectangle +(2cm, 2cm);
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Ionisaatio}
+    \begin{itemize}
+        \item Kun pimeä aine siroaa atomiytimestä, osa energiasta siirtyy sitä ympäröivään elektronipilveen
+        \item Jos elektroni saa tarpeeksi energiaa, se irtoaa atomista
+        \item Elektronin irrottaminen vaatii jonkin verran energiaa
+        \item Pienin havaittavissa oleva energia
+        \item Suuntariippuvainen kristalleissa
+        \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kristallidefektit}
+    \begin{itemize}
+        \item Ionisaatioon vaadittu sirontaenergia liitty läheisesti energiaan, joka vaaditaan siirtämään kristallin atomi pois paikoiltaan
+        \item Väitöskirjassani tutkin tätä simuloimalla atomien liikettä pimeän aineen sironnan seurauksena
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Päivämodulaatio}
+    \begin{itemize}
+        \item Ionisaatioon vaadittu energia suuntariippuvainen
+        \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
+    \end{itemize}
+\end{frame}
+
+\end{document}
