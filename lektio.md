@@ -50,4 +50,6 @@ Kristallidefektit:
 Päivittäinen vaihtelu havainnoissa:
 - Ionisaatioon vaadittu energia suuntariippuvainen
 - Aiheuttaa pävittäisen vaihtelun havaittavien sirontojen määrään
-- Päivittäinen vaihtelu sisältää informaatiota pimeän aineen tuulen suunnasta
+- Päivittäinen vaihtelu sisältää informaatiota pimeän aineen tuulen suunnasta ja nopeusjakaumasta
+- Sen havaitseminen olisi varma merkki pimeän aineen löydöstä
+- Yksi ydinkysymyksiä, joihin väitöskirjassani pyrin vastaamaan on, missä mmärin päivittäinen vaihtelu on havaittavissa seuraavan sukupolven kristallipohjaisissa havaitsimissa ja missä määrin se auttaa pimeän aineen havaitsemista

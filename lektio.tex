@@ -593,7 +593,7 @@ end
 \end{frame}
 
 \begin{frame}
-    \frametitle{Galaksien pyörimisnopeus}
+    \frametitle{Galaksien pyörimisnopeudet}
     \nothing{
         \begin{itemize}
             \item 1970-luvulla tutkijat mittasivat galaksien pyörimisnopeuksia
@@ -641,39 +641,44 @@ end
     }
     \begin{tikzpicture}[
         guide line/.style = {color = white!30!transparent, very thin},
-        speed arrow/.style = {-stealth, very thick}
+        speed arrow/.style = {-stealth, very thick},
+        dm wind a/.style = {
+            decorate,
+            decoration = {
+                snake,
+                segment length = 1cm,
+                amplitude = 0.8mm}, -stealth
+        },
+        dm wind b/.style = {
+            decorate,
+            decoration = {
+                snake,
+                segment length = 1.2cm,
+                amplitude = 0.8mm}, -stealth
+        }
     ]
+        % panel 1
         \coordinate (dm halo) at (0,0);
-        \coordinate (milky way) at (5cm,0);
-        \coordinate (sun) at (10cm,0);
-
         \shade[
                 shading = radial,
                 inner color = scp-purple-dark-2!70!\defaultbgcolor,
                 outer color = \defaultbgcolor]
-            (dm halo) circle [radius=2.5cm];
+            (dm halo) circle [radius=2.0cm];
         \node[inner sep = -5pt]
             (smol mw) at (dm halo) {
                 \includegraphics[width = 1.5cm]{
                     milky_way_transparent_crop_small.png}};
-
         \node at ($(dm halo) + (0, 1.2cm)$) {\tiny Pimeää ainetta};
-        %\draw [
-        %        decorate,
-        %        decoration = {
-        %            text along path,
-        %            text = {|\tiny\color{\defaulttextcolor}|Pimeää ainetta}, 
-        %            reverse path}]
-        %    (dm halo) circle [radius = 1.2cm, rotate = 125];
-
         \node (mw annot) at ($(dm halo) + (-1.5cm, -1cm)$) {\tiny Linnunrata};
         \draw[-stealth] (mw annot) to[out = 90, in = 180] (smol mw);
 
+        % panel 2
+        \coordinate (milky way) at (6cm,0);
         \node[inner sep = -10pt] at (milky way) {
-            \includegraphics[width = 6cm]{
+            \includegraphics[width = 5cm]{
                 milky_way_transparent_crop_small.png}};
-        \draw[speed arrow] (milky way) +(-90:1cm) arc [
-                    start angle = -90, end angle = -170, radius = 1cm];
+        \draw[speed arrow] (milky way) +(-90:0.8cm) arc [
+                    start angle = -90, end angle = -170, radius = 0.8cm];
         \draw[
                 transparent,
                 decorate,
@@ -681,30 +686,60 @@ end
                     text along path,
                     text = {|\tiny\color{\defaulttextcolor}|230 km/s},
                     reverse path}]
-            ($(milky way) + (-70:1.3cm)$) arc [
-                    start angle = -70, end angle = -150, radius = 1.3cm];
-        
-        \node[inner sep = 0pt] at (sun) {
-            \includegraphics[width = 1cm]{sun_transparent.png}};
-        \draw[very thin, white!30!transparent] (sun) circle [radius = 2cm];
-        \draw[speed arrow] (sun) +(105:2.5cm) arc [radius = 2.5cm, start angle = 105, end angle = 75] node[above, pos = 0.5] {\tiny 30 km/s};
-        \draw[speed arrow] (sun) +(-75:2.5cm) arc [radius = 2.5cm, start angle = -75, end angle = -105];
-        \node[inner sep = 0pt] (earth down) at ($(sun) + (-90:2cm)$) {
-            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
-        \node[inner sep = 0pt] (earth up) at ($(sun) + (90:2cm)$) {
-            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
-
+            ($(milky way) + (-70:1.1cm)$) arc [
+                    start angle = -70, end angle = -150, radius = 1.1cm];
         \draw[guide line] (dm halo) circle [radius = 0.4cm];
-        \draw[guide line] (milky way) circle [radius = 2cm];
+        \draw[guide line] (milky way) circle [radius = 1.7cm];
         \draw[guide line]
-            ($(milky way) + (110:2cm)$) -- ($(dm halo) + (110:0.4cm)$);
+            ($(milky way) + (110:1.7cm)$) -- ($(dm halo) + (110:0.4cm)$);
         \draw[guide line]
-            ($(milky way) + (-110:2cm)$) -- ($(dm halo) + (-110:0.4cm)$);
-        \draw[guide line] (sun) circle [radius = 2.3cm];
+            ($(milky way) + (-110:1.7cm)$) -- ($(dm halo) + (-110:0.4cm)$);
+        
+        % panel 3
+        \coordinate (sun) at (6cm,-4cm);
+        \node[inner sep = 0pt] at (sun) {
+            \includegraphics[width = 0.8cm]{sun_transparent.png}};
+        \draw[very thin, white!30!transparent] (sun) circle [radius = 1.3cm];
+        \draw[speed arrow] (sun) +(105:1.7cm) arc [radius = 1.7cm, start angle = 105, end angle = 75] node[above, pos = 0.5] {\tiny 30 km/s};
+        \draw[speed arrow] (sun) +(-75:1.7cm) arc [radius = 1.7cm, start angle = -75, end angle = -105];
+        \node[inner sep = 0pt] (earth down) at ($(sun) + (-90:1.3cm)$) {
+            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
+        \node[inner sep = 0pt] (earth up) at ($(sun) + (90:1.3cm)$) {
+            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
+        \draw[guide line] (sun) circle [radius = 1.7cm];
         \draw[guide line]
-            ($(milky way) + (-90:1cm)$) -- ($(sun) + (130:2.3cm)$);
+            ($(milky way) + (-90:1cm)$) -- ($(sun) + (140:1.7cm)$);
         \draw[guide line]
-            ($(milky way) + (-90:1cm)$) -- ($(sun) + (-105:2.3cm)$);
+            ($(milky way) + (-90:1cm)$) -- ($(sun) + (40:1.7cm)$);
+        
+        % panel 4
+        \coordinate (earth) at (0cm,-4cm);
+        \node[inner sep = 0pt] at (earth) {
+            \includegraphics[width = 2.4cm]{earth_transparent_small.png}};
+        %\draw[stealth-] ($(earth) + (120:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (140:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (160:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (180:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (200:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (220:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (240:1.3cm)$) -- +(-1.5cm,0);
+        %\draw[stealth-] ($(earth) + (260:1.3cm)$) -- +(-1.5cm,0);
+
+        \node at ($(earth) + (-2.0cm,0.99)$) [above = 0.2cm] {\tiny Pimeän aineen tuuli};
+        \draw[dm wind b, -stealth] ($(earth) + (-3.0cm,-0.99)$) -- +(2.1cm,0);
+        %\draw[-stealth] ($(earth) + (-3.0cm,-0.66)$) -- +(1.85cm,0);
+        \draw[dm wind a, -stealth] ($(earth) + (-3.0cm,-0.33)$) -- +(1.75cm,0);
+        %\draw[-stealth] ($(earth) + (-3.0cm,0)$) -- +(1.7cm,0);
+        \draw[dm wind a, -stealth] ($(earth) + (-3.0cm,0.33)$) -- +(1.75cm,0);
+        %\draw[-stealth] ($(earth) + (-3.0cm,0.66)$) -- +(1.85cm,0);
+        \draw[dm wind b, -stealth] ($(earth) + (-3.0cm,0.99)$) -- +(2.1cm,0);
+        \draw[guide line] (earth down) circle [radius = 0.4cm];
+        \draw[guide line] (earth) circle [radius = 1.6cm];
+        \draw[guide line]
+            ($(earth down) + (90:0.4cm)$) -- ($(earth) + (60:1.6cm)$);
+        \draw[guide line]
+            ($(earth down) + (-90:0.4cm)$) -- ($(earth) + (-90:1.6cm)$);
+
     \end{tikzpicture}
 \end{frame}
 
@@ -729,7 +764,7 @@ end
             xtick = \empty,
             ytick = \empty
         ]
-            \node at (axis cs:0,0) [opacity = 0.5]{
+            \node at (axis cs:0,0) [opacity = 0.7]{
                 \includegraphics[width=16cm]{directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png}
             };
 
@@ -770,8 +805,58 @@ end
     \end{tikzpicture}
 \end{frame}
 
+\tikzset
+{
+    pics/proton/.style = {
+        code = {
+            \shade[ball color = proton-red] circle [radius = 0.3];
+        }
+    },
+    pics/neutron/.style = {
+        code = {
+            \shade[ball color = white] circle [radius = 0.3];
+        }
+    },
+    pics/nucleus/.style = {
+        code = {
+            \begin{scope}[transform shape]
+            \pic at (113.90:0.6676) {proton};
+            \pic at (-177.89:0.6676){proton};
+            \pic at (40.41:0.6676) {proton};
+            \pic at (-21.08:0.6676) {proton};
+            \pic at (-53.65:0.6218) {neutron};
+            \pic at (-98.08:0.6676) {proton};
+            \pic at (8.77:0.6218) {neutron};
+            \pic at (85.01:0.6735) {neutron};
+            \pic at (144.30:0.6865) {neutron};
+            \pic at (-143.41:0.7038) {neutron};
+            \pic at (39.16:0.3022) {neutron};
+            \pic at (-124.90:0.2973) {neutron};
+            \pic at (132.23:0.3037) {proton};
+            \pic at (-29.05:0.2774) {proton};
+            \end{scope}
+        }
+    },
+    pics/electron/.style = {
+        code = {
+            \shade[ball color = yellow!80!white] circle [radius = 0.3];
+            %\draw (0,0) circle [radius = 0.5mm];
+            \draw[black] (-0.2,0) -- (0.2,0);
+        }
+    },
+    photon/.style = {
+        decorate,
+        decoration = {
+            snake,
+            segment length = 1.8mm,
+            amplitude = 0.8mm,
+            post = lineto,
+            post length = 1mm}, -stealth
+    }
+}
+
 \begin{frame}
-    \frametitle{Pimeän aineen havaitseminen}
+    \frametitle{Pimeän aineen sironta}
     \nothing{
     \begin{itemize}
         \item Pimeä aine vuorovaikuttaa erittäin heikosti tavallisen aineen kanssa
@@ -785,49 +870,66 @@ end
         \end{itemize}
     \end{itemize}
     }
-    \begin{tikzpicture}[
-        pics/proton/.style = {
-            code = {
-                \shade[ball color = proton-red] circle [radius = 0.3];
-            }
-        },
-        pics/neutron/.style = {
-            code = {
-                \shade[ball color = white] circle [radius = 0.3];
-            }
-        },
-        pics/nucleus/.style = {
-            code = {
-                \begin{scope}[transform shape]
-                \pic at (113.90:0.6676) {proton};
-                \pic at (-177.89:0.6676){proton};
-                \pic at (40.41:0.6676) {proton};
-                \pic at (-21.08:0.6676) {proton};
-                \pic at (-53.65:0.6218) {neutron};
-                \pic at (-98.08:0.6676) {proton};
-                \pic at (8.77:0.6218) {neutron};
-                \pic at (85.01:0.6735) {neutron};
-                \pic at (144.30:0.6865) {neutron};
-                \pic at (-143.41:0.7038) {neutron};
-                \pic at (39.16:0.3022) {neutron};
-                \pic at (-124.90:0.2973) {neutron};
-                \pic at (132.23:0.3037) {proton};
-                \pic at (-29.05:0.2774) {proton};
-                \end{scope}
-            }
-        }
-    ]
-        \node[circle, minimum size=0.8cm] (atom) at (0,0) {} pic[scale = 0.3] {nucleus};
-        \node[circle, ball color = black!70!white] (dm) at (135:1cm) {};
-        \draw[-stealth] (45:1cm) -- (atom.north) -- (dm);
-        \foreach \x in {-1.0, 1.0, 2.0, 3.0, 4.0, 5.0}
-            \pic[scale = 0.3] at (\x,0) {nucleus};
-        
-        \foreach \y in {-1.0, -2.0, -3.0, -4.0, -5.0}
-            \foreach \x in {-1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0}
-                \pic[scale = 0.3] at (\x,\y) {nucleus};
+    \begin{tikzpicture}
+        \shade[
+                shading = radial,
+                inner color = yellow!80!white!30!\defaultbgcolor,
+                outer color = \defaultbgcolor]
+            (dm halo) circle [radius=3.0cm];
+        \node[circle, minimum size=1.0cm] (atom) at (0,0) {} pic[scale = 0.4] {nucleus};
+        \node[circle, ball color = black!70!white] (dm) at (135:3.5cm) {};
+        \draw[-stealth] (45:3.5cm) -- (atom.north) -- (dm);
+        \draw[-stealth] (atom) -- +(-90:3cm);
+        \node[circle, minimum size=0.3cm] (ionize) at ($(atom) + (-60:3.5cm)$) {};
+        \pic at (ionize) [very thick, scale = 0.4] {electron};
+        \draw[-stealth] (atom) +(-60:2cm) -- (ionize);
+        \draw[photon] (atom) +(-110:2cm) -- +(-110:3.5cm);
         %\node[circle, minimum size=0.8cm] at (2,0) {} pic[scale = 0.3] {nucleus};
     \end{tikzpicture}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width = 8cm,
+            height = 5cm,
+            xmin = -0.1,
+            xmax = 1.2,
+            ymin = -0.2,
+            ymax = 1.2,
+            xlabel = {Ytimen massa},
+            axis x line = bottom,
+            axis y line = left,
+            xtick = \empty,
+            ytick = \empty
+        ]
+            \addplot+ [\defaulttextcolor, -stealth] coordinates { (0,0.6) (1,1) } node[sloped, pos = 0.5, above]{\tiny Sironnan todennäköisyys};
+            \addplot+ [\defaulttextcolor, -stealth] coordinates { (0,0.4) (1,0) } node[sloped, pos = 0.5, below]{\tiny Energia};
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pimeän aineen sironta}
+    \begin{tikzpicture}
+        \shade[
+                shading = radial,
+                inner color = yellow!80!white!30!\defaultbgcolor,
+                outer color = \defaultbgcolor]
+            (dm halo) circle [radius=3.0cm];
+        \node[circle, minimum size=1.0cm] (atom) at (0,0) {} pic[scale = 0.4] {nucleus};
+        \node[circle, ball color = black!70!white] (dm) at (135:3.5cm) {};
+        \draw[-stealth] (45:3.5cm) -- (atom.north) -- (dm);
+        %\node[circle, minimum size=0.8cm] at (2,0) {} pic[scale = 0.3] {nucleus};
+    \end{tikzpicture}
+    \nothing
+    {
+    \begin{itemize}
+        \item Kun pimeä aine siroaa atomiytimestä, osa energiasta siirtyy sitä ympäröivään elektronipilveen
+        \item Jos elektroni saa tarpeeksi energiaa, se irtoaa atomista
+        \item Elektronin irrottaminen vaatii jonkin verran energiaa
+        \item Pienin havaittavissa oleva energia
+        \item Suuntariippuvainen kristalleissa
+        \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
+    \end{itemize}
+    }
 \end{frame}
 
 \begin{frame}
@@ -839,45 +941,32 @@ end
         \end{itemize}
     }
     \begin{tikzpicture} [
-        pics/electron/.style = {
-            code = {
-                \draw (0,0) circle [radius = 0.5mm];
-                \draw (-0.35mm,0) -- (0.35mm,0);
-            }
-        },
-        photon/.style = {
-            decorate,
-            decoration = {
-                snake,
-                segment length = 0.9mm,
-                amplitude = 0.4mm,
-                post = lineto,
-                post length = 1mm}, -stealth
-        }
     ]
         \node (xenon) at (-0.5cm,-0.3cm) {\includegraphics[width = 4cm]{xenon_cryostat_render_fix.png}};
-        \node[circle, minimum size = 0.1cm, inner sep = 0pt] (atom) at (0,0) {};
-        \draw[-stealth] (45:1cm) -- (atom.north) -- (135:1cm);
-        \draw[-stealth] (atom) -- (-90:1cm);
-        \pic at ($(atom) + (-100:0.8cm)$) {electron};
-        \pic at ($(atom) + (-105:0.6cm)$) {electron};
-        \pic at ($(atom) + (-98:0.48cm)$) {electron};
-        \pic at ($(atom) + (-84:0.64cm)$) {electron};
-        \pic at ($(atom) + (-80:0.35cm)$) {electron};
-        \pic at ($(atom) + (-75:0.48cm)$) {electron};
-        \draw[photon] ($(atom) + (-90:0.5cm) + (0:0.3cm)$) -- ++(-0:0.5);
-        \draw[photon] ($(atom) + (-90:0.5cm) + (-45:0.3cm)$) -- ++(-45:0.5);
-        \draw[photon] ($(atom) + (-90:0.5cm) + (45:0.3cm)$) -- ++(45:0.5);
-        \draw[photon] ($(atom) + (-90:0.5cm) + (135:0.3cm)$) -- ++(135:0.5);
-        \draw[photon] ($(atom) + (-90:0.5cm) + (180:0.3cm)$) -- ++(180:0.5);
-        \draw[photon] ($(atom) + (-90:0.5cm) + (-145:0.3cm)$) -- ++(-145:0.5);
+        \node at (xenon) {\color{\defaultbgcolor} nestemäistä jalokaasua};
+        %\node[circle, minimum size = 0.1cm, inner sep = 0pt] (atom) at (0,0) {};
+        %\draw[-stealth] (45:1cm) -- (atom.north) -- (135:1cm);
+        %\draw[-stealth] (atom) -- (-90:1cm);
+        %\pic at ($(atom) + (-100:0.8cm)$) {electron};
+        %\pic at ($(atom) + (-105:0.6cm)$) {electron};
+        %\pic at ($(atom) + (-98:0.48cm)$) {electron};
+        %\pic at ($(atom) + (-84:0.64cm)$) {electron};
+        %\pic at ($(atom) + (-80:0.35cm)$) {electron};
+        %\pic at ($(atom) + (-75:0.48cm)$) {electron};
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (0:0.3cm)$) -- ++(-0:0.5);
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (-45:0.3cm)$) -- ++(-45:0.5);
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (45:0.3cm)$) -- ++(45:0.5);
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (135:0.3cm)$) -- ++(135:0.5);
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (180:0.3cm)$) -- ++(180:0.5);
+        %\draw[photon] ($(atom) + (-90:0.5cm) + (-145:0.3cm)$) -- ++(-145:0.5);
         \coordinate (crystal) at (6.0cm, 0);
         %\node at (crystal) {
         %    \includegraphics[width = 3cm]{cresst_detector_crop.png}};
         \node at (crystal) {
             \includegraphics[width = 6cm]{edelweiss_bolo.jpg}};
-        \node at (crystal) [opacity = 0.7]{
+        \node at (crystal) [opacity = 0.8]{
             \includegraphics[width = 6cm]{edelweiss_bolo_mask.png}};
+        \node at (crystal) [below = 1.3cm]{Germanium-kristalli};
         %\fill[\defaultbgcolor, opacity = 0.7]
         %    (crystal) +(0.4386cm, 0.5714cm)
         %        -- +(-0.1329cm, 0.7143cm)
@@ -891,23 +980,80 @@ end
 \end{frame}
 
 \begin{frame}
-    \frametitle{Ionisaatio}
-    \begin{itemize}
-        \item Kun pimeä aine siroaa atomiytimestä, osa energiasta siirtyy sitä ympäröivään elektronipilveen
-        \item Jos elektroni saa tarpeeksi energiaa, se irtoaa atomista
-        \item Elektronin irrottaminen vaatii jonkin verran energiaa
-        \item Pienin havaittavissa oleva energia
-        \item Suuntariippuvainen kristalleissa
-        \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
     \frametitle{Kristallidefektit}
-    \begin{itemize}
-        \item Ionisaatioon vaadittu sirontaenergia liitty läheisesti energiaan, joka vaaditaan siirtämään kristallin atomi pois paikoiltaan
-        \item Väitöskirjassani tutkin tätä simuloimalla atomien liikettä pimeän aineen sironnan seurauksena
-    \end{itemize}
+    \begin{tikzpicture}
+        % frame 1
+        \coordinate (base1) at (0,0);
+        \node[circle] (atom1) at ($(base1) + (0.75, 0.75)$) {};
+        \node[circle, ball color = black!70!white] (dm1) at ($(base1) + (-0.75, 0.3)$) {};
+        \draw[-stealth] (dm1) -- (atom1);
+        \foreach \x in {0, 1.5, 3.0}
+            \foreach \y in {0, 1.5, 3.0}
+                \fill[white] (base1) +(\x,\y) circle [radius = 0.1cm];
+        \foreach \x in {0, 1.5}
+            \foreach \y in {0, 1.5}
+                \fill[white] (base1) +($(\x,\y) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        
+        % frame 2
+        \coordinate (base2) at (4.5,0);
+        \node[circle] (atom2) at ($(base2) + (0.75, 0.75)$) {};
+        \node[circle] (dm21) at ($(base2) + (-0.75, 0.3)$) {};
+        \node[circle, ball color = black!70!white] (dm22) at ($(base2) + (-0.75, 1.2)$) {};
+        \draw[-stealth] (dm21) -- (atom2.west) -- (dm22);
+        \fill[white] (atom2) + (0.15,0) circle [radius = 0.1cm];
+        \foreach \x in {0, 1.5, 3.0}
+            \foreach \y in {0, 1.5, 3.0}
+                \fill[white] (base2) +(\x,\y) circle [radius = 0.1cm];
+        \fill[white] (base2) +($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        \fill[white] (base2) +($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        \fill[white] (base2) +($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+
+        % frame 3
+        \coordinate (base3) at (9.0,0);
+        \coordinate (atom31) at ($(base3) + (0.75, 0.75)$) {};
+        \coordinate (atom32) at ($(base3) + (1.5, 1.5)$) {};
+        \coordinate (atom33) at ($(base3) + (2.25,2.25)$) {};
+        \fill[white] (atom31) + (1.125,1.125) circle [radius = 0.1cm];
+        \foreach \x in {0, 1.5, 3.0}
+            \foreach \y in {0, 1.5, 3.0}
+                \fill[white] (base3) +(\x,\y) circle [radius = 0.1cm];
+        \fill[white] (base3) +($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        \fill[white] (base3) +($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        \fill[white] (base3) +($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+        \draw[-stealth] (-0.2cm,-2.2cm) -- (-0.2cm,-0.5cm) node [sloped, pos = 0.5, above] {\tiny Energia};
+        %\draw (-0.2cm,-2.2cm) -- +(12cm,0);
+        \begin{scope}[shift = {(0,-0.3cm)}]
+            \fill[white] (0.75cm,-1.5cm) circle [radius = 0.1cm];
+            \draw (0,-0.6cm)
+                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                .. (1.69cm, -0.78cm)
+                ..controls (1.9cm,-0.9cm)
+                .. (2.25cm,-0.7cm);
+        \end{scope}
+        \begin{scope}[shift = {(4.5cm,-0.3cm)}]
+            \fill[white] (0.9cm,-1.3cm) circle [radius = 0.1cm];
+            \draw (0,-0.6cm)
+                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                .. (1.69cm, -0.78cm)
+                ..controls (1.9cm,-0.9cm)
+                .. (2.25cm,-0.7cm);
+        \end{scope}
+        \begin{scope}[shift = {(9.0cm,-0.3cm)}]
+            \fill[white] (1.875cm,-0.7cm) circle [radius = 0.1cm];
+            \draw (0,-0.6cm)
+                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                .. (1.69cm, -0.78cm)
+                ..controls (1.9cm,-0.9cm)
+                .. (2.25cm,-0.7cm);
+        \end{scope}
+    \end{tikzpicture}
+    \nothing
+    {
+        \begin{itemize}
+            \item Ionisaatioon vaadittu sirontaenergia liitty läheisesti energiaan, joka vaaditaan siirtämään kristallin atomi pois paikoiltaan
+            \item Väitöskirjassani tutkin tätä simuloimalla atomien liikettä pimeän aineen sironnan seurauksena
+        \end{itemize}
+    }
 \end{frame}
 
 \begin{frame}
@@ -915,6 +1061,9 @@ end
     \begin{itemize}
         \item Ionisaatioon vaadittu energia suuntariippuvainen
         \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
+        \item Päivittäinen vaihtelu sisältää informaatiota pimeän aineen tuulen suunnasta ja nopeusjakaumasta
+        \item Sen havaitseminen olisi varma merkki pimeän aineen löydöstä
+        \item Yksi ydinkysymyksiä, joihin väitöskirjassani pyrin vastaamaan on, missä mmärin päivittäinen vaihtelu on havaittavissa seuraavan sukupolven kristallipohjaisissa havaitsimissa ja missä määrin se auttaa pimeän aineen havaitsemista
     \end{itemize}
 \end{frame}
 

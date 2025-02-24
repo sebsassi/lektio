@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.17)  21 FEB 2025 18:45
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.17)  24 FEB 2025 19:58
  restricted system commands enabled.
 **lektio
 (./lektio.tex
@@ -2790,27 +2790,35 @@ Overfull \vbox (8.90472pt too high) detected at line 622
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 709.
+ne 744.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 709.
-(luatex.def)             Requested size: 170.71652pt x 170.72038pt.
+ne 744.
+(luatex.def)             Requested size: 142.26378pt x 142.26576pt.
 <sun_transparent.png, id=43, 758.835pt x 715.67375pt>
 File: sun_transparent.png Graphic file (type png)
 <use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 709.
-(luatex.def)             Requested size: 28.45274pt x 26.83115pt.
+Package luatex.def Info: sun_transparent.png  used on input line 744.
+(luatex.def)             Requested size: 22.76228pt x 21.45836pt.
 <earth_transparent_small.png, id=44, 595.47469pt x 595.47469pt>
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 709.
+Package luatex.def Info: earth_transparent_small.png  used on input line 744.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 709.
+Package luatex.def Info: earth_transparent_small.png  used on input line 744.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
+File: earth_transparent_small.png Graphic file (type png)
+<use earth_transparent_small.png>
+Package luatex.def Info: earth_transparent_small.png  used on input line 744.
+(luatex.def)             Requested size: 68.28644pt x 68.28279pt.
+
+Overfull \vbox (5.68503pt too high) detected at line 744
+ []
+
 
 
 [4
@@ -2837,7 +2845,7 @@ File: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png Graphi
 c file (type png)
 <use directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png>
 Package luatex.def Info: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_tra
-nsparent.png  used on input line 771.
+nsparent.png  used on input line 806.
 (luatex.def)             Requested size: 455.24408pt x 454.34909pt.
 
 
@@ -2850,32 +2858,32 @@ Missing character: There is no ` (U+0060) in font nullfont!
 [6
 
 ]
-<xenon_cryostat_render_fix.png, id=77, 496.29663pt x 794.33044pt>
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 891.
-
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-<edelweiss_bolo.jpg, id=78, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 891.
-(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
-<edelweiss_bolo_mask.png, id=79, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 891.
-(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
-
 
 [7
 
-<./xenon_cryostat_render_fix.png><./edelweiss_bolo.jpg><./edelweiss_bolo_mask.pn
-g>]
+]
+<xenon_cryostat_render_fix.png, id=88, 496.29663pt x 794.33044pt>
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 980.
+
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+<edelweiss_bolo.jpg, id=89, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 980.
+(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
+<edelweiss_bolo_mask.png, id=90, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 980.
+(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
+
 
 [8
 
-]
+<./xenon_cryostat_render_fix.png><./edelweiss_bolo.jpg><./edelweiss_bolo_mask.pn
+g>]
 
 [9
 
@@ -2910,22 +2918,22 @@ Package logreq Info: Writing requests to 'lektio.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 64088 strings out of 475664
- 596225,3417909 words of node,token memory allocated
- 3418 words of node memory still in use:
-   27 hlist, 9 vlist, 4 rule, 32 disc, 5 local_par, 67 glue, 11 kern, 17 penalty
-, 1 margin_kern, 164 glyph, 132 attribute, 75 glue_spec, 68 attribute_list, 4 wr
-ite, 24 pdf_colorstack nodes
-   avail lists: 1:22,2:64660,3:36271,4:196,5:106,6:26,7:22674,8:1,9:14596,10:12,
-11:196
- 85230 multiletter control sequences out of 65536+600000
- 128 fonts using 42622135 bytes
- 128i,14n,116p,1178b,2307s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/fonts/truetype/noto/NotoSans-VariableFont_wdth,wght.ttf>
-Output written on lektio.pdf (10 pages, 9567110 bytes).
+ 64211 strings out of 475664
+ 125016,3417909 words of node,token memory allocated
+ 8360 words of node memory still in use:
+   42 hlist, 9 vlist, 4 rule, 113 disc, 8 local_par, 146 glue, 18 kern, 29 penal
+ty, 2 margin_kern, 590 glyph, 204 attribute, 75 glue_spec, 104 attribute_list, 4
+ write, 42 pdf_colorstack nodes
+   avail lists: 1:9,2:10813,3:7651,4:311,5:73,6:20,7:1648,8:2,9:724,10:11,11:232
 
-PDF statistics: 120 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 85351 multiletter control sequences out of 65536+600000
+ 128 fonts using 42622203 bytes
+ 128i,14n,116p,1178b,2358s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/fonts/truetype/noto/NotoSans-VariableFont_wdth,wght.ttf>
+Output written on lektio.pdf (10 pages, 9527480 bytes).
+
+PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 131072)
- 66 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 100000000)
 
