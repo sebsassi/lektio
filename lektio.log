@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.17)  24 FEB 2025 19:58
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.17)  25 FEB 2025 20:38
  restricted system commands enabled.
 **lektio
 (./lektio.tex
@@ -1403,7 +1403,17 @@ th LuaLaTeX)
 \g__um_primekern_muskip=\muskip19
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
-ex))) (./scpcolors.sty
+ex))) (/usr/local/texlive/2024/texmf-dist/tex/latex/pdfrender/pdfrender.sty
+Package: pdfrender 2023-12-07 v1.8 Access to some PDF graphics parameters (HO)
+Package pdfrender Info: \pdfmatch not found. Therefore the values
+(pdfrender)             of some parameters are not validated.
+LaTeX Info: Redefining \pdfrender on input line 296.
+LaTeX Info: Redefining \textpdfrender on input line 312.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+\pb@xlen=\skip74
+) (./scpcolors.sty
 Package: scpcolors 2024/11/02 Custom colors
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -1459,14 +1469,14 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@sectionciteorderinternal@0=\count447
 \blx@entrysetcounter=\count448
 \blx@biblioinstance=\count449
-\labelnumberwidth=\skip74
-\labelalphawidth=\skip75
-\biblabelsep=\skip76
-\bibitemsep=\skip77
-\bibnamesep=\skip78
-\bibinitsep=\skip79
-\bibparsep=\skip80
-\bibhang=\skip81
+\labelnumberwidth=\skip75
+\labelalphawidth=\skip76
+\biblabelsep=\skip77
+\bibitemsep=\skip78
+\bibnamesep=\skip79
+\bibinitsep=\skip80
+\bibparsep=\skip81
+\bibhang=\skip82
 \blx@bcfin=\read5
 \blx@bcfout=\write5
 \blx@langwohyphens=\language91
@@ -1553,20 +1563,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count518
 \c@pageref=\count519
 \c@savedpageref=\count520
-\shorthandwidth=\skip82
-\shortjournalwidth=\skip83
-\shortserieswidth=\skip84
-\shorttitlewidth=\skip85
-\shortauthorwidth=\skip86
-\shorteditorwidth=\skip87
-\locallabelnumberwidth=\skip88
-\locallabelalphawidth=\skip89
-\localshorthandwidth=\skip90
-\localshortjournalwidth=\skip91
-\localshortserieswidth=\skip92
-\localshorttitlewidth=\skip93
-\localshortauthorwidth=\skip94
-\localshorteditorwidth=\skip95
+\shorthandwidth=\skip83
+\shortjournalwidth=\skip84
+\shortserieswidth=\skip85
+\shorttitlewidth=\skip86
+\shortauthorwidth=\skip87
+\shorteditorwidth=\skip88
+\locallabelnumberwidth=\skip89
+\locallabelalphawidth=\skip90
+\localshorthandwidth=\skip91
+\localshortjournalwidth=\skip92
+\localshortserieswidth=\skip93
+\localshorttitlewidth=\skip94
+\localshortauthorwidth=\skip95
+\localshorteditorwidth=\skip96
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -1756,12 +1766,12 @@ Package fontspec Info:
 (fontspec)             Italic:mode=base;script=latn;language=dflt;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/NotoSans(1)/m/n on input line 179.
+(Font)                  OT1/cmr/m/n --> TU/NotoSans(1)/m/n on input line 181.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/NotoSans(1)/m/it on input line 179.
+(Font)                  OT1/cmr/m/it --> TU/NotoSans(1)/m/it on input line 181.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/NotoSans(1)/b/n on input line 179.
+(Font)                  OT1/cmr/bx/n --> TU/NotoSans(1)/b/n on input line 181.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NotoSans(2)' created for font 'Noto Sans'
@@ -1839,9 +1849,9 @@ hlig;-rlig;-clig;+smcp;"
 -hlig;-rlig;-clig;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/NotoSans(3)/m/n on input line 184.
+(Font)                  OT1/cmss/m/n --> TU/NotoSans(3)/m/n on input line 186.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/NotoSans(3)/b/n on input line 184.
+(Font)                  OT1/cmss/bx/n --> TU/NotoSans(3)/b/n on input line 186.
 
 luaotfload | aux : font no 41 (nil) defines no feature for script latn
 luaotfload | aux : font no 41 (nil) defines no feature for script dflt
@@ -1918,9 +1928,9 @@ Package fontspec Info:
 (fontspec)             Mono:mode=base;language=dflt;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/m/n on input line 186.
+(Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/m/n on input line 188.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/b/n on input line 186.
+(Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/b/n on input line 188.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
@@ -1971,16 +1981,16 @@ etex;+ssty=0;"<-6.0225>"name:Noto
 etex;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 187.
+(Font)              `operators' in the math version `normal' on input line 189.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/NotoSansMath(1)/m/n on input line 18
-7.
+9.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 187.
+(Font)              `operators' in the math version `bold' on input line 189.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/NotoSansMath(1)/b/n on input line 1
-87.
+89.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
@@ -2012,15 +2022,15 @@ etex;mathfontdimen=tex2;+ssty=0;"<-6.0225>"name:Noto
 etex;mathfontdimen=tex2;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 187.
+(Font)              `symbols' in the math version `normal' on input line 189.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/NotoSansMath(2)/m/n on input line 1
-87.
+89.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 187.
+(Font)              `symbols' in the math version `bold' on input line 189.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/NotoSansMath(2)/b/n on input line 1
-87.
+89.
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
@@ -2053,30 +2063,30 @@ etex;mathfontdimen=tex3;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-87.
+89.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/NotoSansMath(3)/m/n on input line 1
-87.
+89.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 187
+(Font)              `largesymbols' in the math version `bold' on input line 189
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/NotoSansMath(3)/b/n on input line 1
-87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 187
+89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 189
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 187
+LaTeX Font Info:    Trying to load font information for U+msb on input line 189
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 187.
+ut line 189.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -2094,7 +2104,7 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Noto Sans
 (fontspec)             Semibold:mode=node;script=latn;language=dflt;"
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 297.
+Package hyperref Info: Option `colorlinks' set `true' on input line 299.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -2105,34 +2115,34 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./lektio.aux)
 \openout1 = lektio.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 564.
-LaTeX Font Info:    ... okay on input line 564.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 564.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 566.
+LaTeX Font Info:    ... okay on input line 566.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 566.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 5
-64.
+66.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 564.
+LaTeX Font Info:    ... okay on input line 566.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2190,7 +2200,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 564.
+Package hyperref Info: Link coloring ON on input line 566.
 
 (./lektio.out) (./lektio.out)
 \@outlinefile=\write6
@@ -2224,19 +2234,19 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Info: Redefining \microtypecontext on input line 564.
-Package microtype Info: Applying patch `item' on input line 564.
-Package microtype Info: Applying patch `toc' on input line 564.
-Package microtype Info: Applying patch `eqnum' on input line 564.
-Package microtype Info: Applying patch `footnote' on input line 564.
-Package microtype Info: Applying patch `verbatim' on input line 564.
+LaTeX Info: Redefining \microtypecontext on input line 566.
+Package microtype Info: Applying patch `item' on input line 566.
+Package microtype Info: Applying patch `toc' on input line 566.
+Package microtype Info: Applying patch `eqnum' on input line 566.
+Package microtype Info: Applying patch `footnote' on input line 566.
+Package microtype Info: Applying patch `verbatim' on input line 566.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 564.
+LaTeX Info: Redefining \showhyphens on input line 566.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -2247,19 +2257,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/NotoSans(2)/m/n --> TS1/NotoSans(2)/b/n on input li
-ne 564.
-Package gensymb Info: Math companion symbols declared on input line 564.
-LaTeX Info: Redefining \degree on input line 564.
-LaTeX Info: Redefining \celsius on input line 564.
+ne 566.
+Package gensymb Info: Math companion symbols declared on input line 566.
+LaTeX Info: Redefining \degree on input line 566.
+LaTeX Info: Redefining \celsius on input line 566.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 564.
-LaTeX Info: Redefining \ohm on input line 564.
-Package gensymb Info: Using \textohm for \ohm on input line 564.
-Package gensymb Info: Using \textmu for \micro on input line 564.
+erthousand on input line 566.
+LaTeX Info: Redefining \ohm on input line 566.
+Package gensymb Info: Using \textohm for \ohm on input line 566.
+Package gensymb Info: Using \textmu for \micro on input line 566.
 
 Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
- input line 564.
+ input line 566.
 
 Package biblatex Info: Trying to load language 'finnish'...
 Package biblatex Info: ... file 'finnish.lbx' found.
@@ -2276,8 +2286,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lektio.bbl' not found.
 
 No file lektio.bbl.
-Package biblatex Info: Reference section=0 on input line 564.
-Package biblatex Info: Reference segment=0 on input line 564.
+Package biblatex Info: Reference section=0 on input line 566.
+Package biblatex Info: Reference segment=0 on input line 566.
 (./lektio.nav)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSansMath' (encoding: TU).
@@ -2480,12 +2490,12 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+NotoSans(2) on inpu
-t line 564.
-LaTeX Font Info:    No file TS1NotoSans(2).fd. on input line 564.
+t line 566.
+LaTeX Font Info:    No file TS1NotoSans(2).fd. on input line 566.
 
 
 LaTeX Font Warning: Font shape `TS1/NotoSans(2)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead on input line 564.
+(Font)              using `TS1/cmr/m/n' instead on input line 566.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSans' (encoding: TS1).
@@ -2496,277 +2506,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6.57'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5.475'.
-(microtype)             Ignoring protrusion settings for this character.
-
 
 [2
 
@@ -2775,10 +2514,12 @@ Package microtype Info: Character `textquestiondown ' is missing
 File: milky_way_2_transparent_small.png Graphic file (type png)
 <use milky_way_2_transparent_small.png>
 Package luatex.def Info: milky_way_2_transparent_small.png  used on input line 
-622.
+646.
 (luatex.def)             Requested size: 227.62204pt x 227.62964pt.
+PGFPlots: reading {rotation_visible.csv}
+PGFPlots: reading {rotation_dark.csv}
 
-Overfull \vbox (8.90472pt too high) detected at line 622
+Overfull \vbox (8.90472pt too high) detected at line 646
  []
 
 
@@ -2790,33 +2531,33 @@ Overfull \vbox (8.90472pt too high) detected at line 622
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 744.
+ne 768.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 744.
+ne 768.
 (luatex.def)             Requested size: 142.26378pt x 142.26576pt.
 <sun_transparent.png, id=43, 758.835pt x 715.67375pt>
 File: sun_transparent.png Graphic file (type png)
 <use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 744.
+Package luatex.def Info: sun_transparent.png  used on input line 768.
 (luatex.def)             Requested size: 22.76228pt x 21.45836pt.
 <earth_transparent_small.png, id=44, 595.47469pt x 595.47469pt>
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 744.
+Package luatex.def Info: earth_transparent_small.png  used on input line 768.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 744.
+Package luatex.def Info: earth_transparent_small.png  used on input line 768.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 744.
+Package luatex.def Info: earth_transparent_small.png  used on input line 768.
 (luatex.def)             Requested size: 68.28644pt x 68.28279pt.
 
-Overfull \vbox (5.68503pt too high) detected at line 744
+Overfull \vbox (5.68503pt too high) detected at line 768
  []
 
 
@@ -2825,6 +2566,8 @@ Overfull \vbox (5.68503pt too high) detected at line 744
 
 <./milky_way_transparent_crop_small.png><./sun_transparent.png><./earth_transpar
 ent_small.png>]
+Package pgfplots info on input line 829: Using 'lua backend=false' for plot 0 (
+type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
 PGFPlots: reading {star_map/horizontal_line_2.dat}
@@ -2845,8 +2588,8 @@ File: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png Graphi
 c file (type png)
 <use directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png>
 Package luatex.def Info: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_tra
-nsparent.png  used on input line 806.
-(luatex.def)             Requested size: 455.24408pt x 454.34909pt.
+nsparent.png  used on input line 829.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
 [5
@@ -2858,38 +2601,87 @@ Missing character: There is no ` (U+0060) in font nullfont!
 [6
 
 ]
+<xenon_cryostat_render_fix.png, id=81, 496.29663pt x 794.33044pt>
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1049
+.
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+<edelweiss_bolo.jpg, id=82, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1049.
+(luatex.def)             Requested size: 170.71652pt x 92.61119pt.
+<edelweiss_bolo_mask.png, id=84, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1049.
+(luatex.def)             Requested size: 170.71652pt x 92.61119pt.
+
 
 [7
 
-]
-<xenon_cryostat_render_fix.png, id=88, 496.29663pt x 794.33044pt>
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 980.
-
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-<edelweiss_bolo.jpg, id=89, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 980.
-(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
-<edelweiss_bolo_mask.png, id=90, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 980.
-(luatex.def)             Requested size: 170.71652pt x 134.50961pt.
-
+<./edelweiss_bolo.jpg><./edelweiss_bolo_mask.png><./xenon_cryostat_render_fix.pn
+g>]
 
 [8
 
-<./xenon_cryostat_render_fix.png><./edelweiss_bolo.jpg><./edelweiss_bolo_mask.pn
-g>]
+]
+Package pgfplots info on input line 1176: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+<esurf_Ge.png, id=109, 377.9721pt x 377.2494pt>
+File: esurf_Ge.png Graphic file (type png)
+<use esurf_Ge.png>
+Package luatex.def Info: esurf_Ge.png  used on input line 1176.
+(luatex.def)             Requested size: 365.24255pt x 365.26373pt.
+
 
 [9
 
-]
+<./esurf_Ge.png>]
+Package pgfplots info on input line 1237: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/vlab_2025-03-06-21-00.dat}
+<transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png, id=118, 2267
+.8326pt x 2263.4964pt>
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1237.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+
 
 [10
+
+
+Missing character: There is no ` (U+0060) in font nullfont!
+<./transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>]
+
+[11
 
 ]
 \tf@nav=\write7
@@ -2918,22 +2710,23 @@ Package logreq Info: Writing requests to 'lektio.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 64211 strings out of 475664
+ 64756 strings out of 475664
  125016,3417909 words of node,token memory allocated
  8360 words of node memory still in use:
    42 hlist, 9 vlist, 4 rule, 113 disc, 8 local_par, 146 glue, 18 kern, 29 penal
 ty, 2 margin_kern, 590 glyph, 204 attribute, 75 glue_spec, 104 attribute_list, 4
  write, 42 pdf_colorstack nodes
-   avail lists: 1:9,2:10813,3:7651,4:311,5:73,6:20,7:1648,8:2,9:724,10:11,11:232
+   avail lists: 1:9,2:14797,3:7650,4:378,5:73,6:20,7:2038,8:1,9:1095,10:11,11:23
+2
+ 85728 multiletter control sequences out of 65536+600000
+ 125 fonts using 42434791 bytes
+ 128i,14n,116p,1178b,2459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/fonts/truetype/noto/NotoSansMath-Regular.ttf></usr/share/fonts/truet
+ype/noto/NotoSans-VariableFont_wdth,wght.ttf>
+Output written on lektio.pdf (11 pages, 13470451 bytes).
 
- 85351 multiletter control sequences out of 65536+600000
- 128 fonts using 42622203 bytes
- 128i,14n,116p,1178b,2358s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/fonts/truetype/noto/NotoSans-VariableFont_wdth,wght.ttf>
-Output written on lektio.pdf (10 pages, 9527480 bytes).
-
-PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 131072)
- 86 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 152 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
+ 126 words of extra memory for PDF output out of 10000 (max. 100000000)
 
