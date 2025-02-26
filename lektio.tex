@@ -469,9 +469,9 @@ end
     \end{tikzpicture}
 }
 
-\title{Pimeä aine tulevan sukupolven detektoreissa}
+\title{Pimeä aine uuden sukupolven detektoreissa}
 \author{Sebastian Sassi}
-\institute{University of Helsinki}
+\institute{Helsingin Yliopisto}
 \date{6.3.2025}
 
 %\tikzexternalize
@@ -579,18 +579,62 @@ end
     \end{itemize}
     }
     \begin{tikzpicture}
-        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -7cm) rectangle (12.445cm, 0);
-        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -1.036cm) rectangle (2.489cm, 0);
-        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (0, -7cm) rectangle (2.489cm, -1.036cm);
-        \filldraw[very thick, fill = \defaulttextcolor, draw = \defaultbgcolor] (2.489cm, -7cm) rectangle (12.445cm, 0);
-
-        \node at (2.489cm, -1.036cm) [anchor = south east, \defaultbgcolor, font = \tiny] {1.4\%};
-        \node at (2.489cm, -7cm) [anchor = south east, \defaultbgcolor, font = \footnotesize] {18.6\%};
-        \node at (12.445cm, -7cm) [anchor = south east, \defaultbgcolor, font = \large] {80\%};
-
-        \node at (1.2445cm, -0.518cm) [\defaultbgcolor, font = \footnotesize] {Galakseja};
-        \node at (1.2445cm, -3.759cm) [align = center, \defaultbgcolor, font = \footnotesize] {Galaksien\\ välistä kaasua};
-        \node at (7.467cm, -3.5cm) [\defaultbgcolor, font = \large] {Pimeää ainetta};
+        %\filldraw[
+        %        very thick,
+        %        fill = \defaulttextcolor,
+        %        draw = \defaultbgcolor]
+        %    (0, -7cm) rectangle (12.445cm, 0);
+        \begin{scope}[visible on = <1->]
+            \filldraw[
+                    very thick,
+                    fill = \defaulttextcolor,
+                    draw = \defaultbgcolor]
+                (0, -1.036cm) rectangle (2.489cm, 0);
+            \node at (2.489cm, -1.036cm) [
+                    anchor = south east,
+                    \defaultbgcolor,
+                    font = \tiny] {
+                1.4\%};
+            \node at (1.2445cm, -0.518cm) [
+                    \defaultbgcolor,
+                    font = \footnotesize] {
+                Galakseja};
+        \end{scope}
+        
+        \begin{scope}[visible on = <2->]
+            \filldraw[
+                    very thick,
+                    fill = \defaulttextcolor,
+                    draw = \defaultbgcolor]
+                (0, -7cm) rectangle (2.489cm, -1.036cm);
+            \node at (2.489cm, -7cm) [
+                    anchor = south east,
+                    \defaultbgcolor,
+                    font = \footnotesize] {
+                18.6\%};
+            \node at (1.2445cm, -3.759cm) [
+                    align = center,
+                    \defaultbgcolor,
+                    font = \footnotesize] {
+                Galaksien\\ välistä kaasua};
+        \end{scope}
+        
+        \begin{scope}[visible on = <3->]
+            \filldraw[
+                    very thick,
+                    fill = \defaulttextcolor,
+                    draw = \defaultbgcolor]
+                (2.489cm, -7cm) rectangle (12.445cm, 0);
+            \node at (12.445cm, -7cm) [
+                    anchor = south east,
+                    \defaultbgcolor,
+                    font = \large] {
+                80\%};
+            \node at (7.467cm, -3.5cm) [
+                    \defaultbgcolor,
+                    font = \large] {
+                Pimeää ainetta};
+        \end{scope}
     \end{tikzpicture}
 \end{frame}
 
@@ -613,13 +657,23 @@ end
         %\node[inner sep=0pt] (coma cluster) at (0,0) {\includegraphics[width=8cm, angle=90]{coma_cluster_transparent_small.png}};
         \node[inner sep=0pt] (galaxy) at (0,0) {\includegraphics[width=8cm, angle=90]{milky_way_2_transparent_small.png}};
 
-        \foreach \r / \angle in {1.5/-120, 2.5/-110, 3.5/-100}
+        \foreach \r / \angle in {1.5/-125, 2.5/-110, 3.5/-100}
         {
-            \draw[speed arrow] (galaxy) +(-90:\r) arc[radius = \r, start angle = -90, end angle = \angle];
+            \draw[speed arrow, visible on=<1>]
+                (galaxy) +(-90:\r)
+                arc [
+                    radius = \r,
+                    start angle = -90,
+                    end angle = \angle];
         }
         \foreach \r in {1.5, 2.5, 3.5}
         {
-            \draw[speed arrow] (galaxy) +(-90:\r) arc[radius = \r, start angle = -90, end angle = -120];
+            \draw[speed arrow, visible on=<2>]
+                (galaxy) +(-90:\r)
+                arc [
+                    radius = \r,
+                    start angle = -90,
+                    end angle = -120];
         }
         %\node[inner sep=0pt] (galaxy) at (8cm,2cm) {\includegraphics[width=6cm{bullet_cluster_transparent_small.png}};
         \begin{axis}[
@@ -639,8 +693,12 @@ end
             xlabel = {Etäisyys keskustasta},
             ylabel = {Pyörimisnopeus}
         ]
-            \addplot+ table[col sep = comma] {rotation_visible.csv} node [sloped, above, pos = 0.95, font = \tiny] {odotus};
-            \addplot+ table[col sep = comma] {rotation_dark.csv} node [sloped, above, pos = 0.95, font = \tiny] {mitattu};
+            \addplot+ [visible on = <1->]
+                table [col sep = comma] {rotation_visible.csv}
+                node [sloped, above, pos = 0.95, font = \tiny] {odotus};
+            \addplot+ [visible on = <2->]
+                table [col sep = comma] {rotation_dark.csv}
+                node [sloped, above, pos = 0.95, font = \tiny] {mitattu};
         \end{axis}
     \end{tikzpicture}
 \end{frame}
@@ -683,86 +741,115 @@ end
     ]
         % panel 1
         \coordinate (dm halo) at (0,0);
-        \shade[
-                shading = radial,
-                inner color = scp-purple-dark-2!70!\defaultbgcolor,
-                outer color = \defaultbgcolor]
-            (dm halo) circle [radius=2.0cm];
-        \node[inner sep = -5pt]
-            (smol mw) at (dm halo) {
-                \includegraphics[width = 1.5cm]{
-                    milky_way_transparent_crop_small.png}};
-        \node at ($(dm halo) + (0, 1.2cm)$) [font = \tiny] {Pimeää ainetta};
-        \node (mw annot) at ($(dm halo) + (-1.5cm, -1cm)$) [font = \tiny] {Linnunrata};
-        \draw[-stealth] (mw annot) to[out = 90, in = 180] (smol mw);
+        \begin{scope}[visible on = <1->]
+            \shade[
+                    shading = radial,
+                    inner color = scp-purple-dark-2!70!\defaultbgcolor,
+                    outer color = \defaultbgcolor]
+                (dm halo) circle [radius = 2.0cm];
+            \node[inner sep = -5pt]
+                (smol mw) at (dm halo) {
+                    \includegraphics[width = 1.5cm]{
+                        milky_way_transparent_crop_small.png}};
+            \node at ($(dm halo) + (0, 1.2cm)$) [font = \tiny] {
+                Pimeää ainetta};
+            \node (mw annot) at ($(dm halo) + (-1.5cm, -1cm)$) [font = \tiny] {
+                Linnunrata};
+            \draw[-stealth] (mw annot) to [out = 90, in = 180] (smol mw);
+        \end{scope}
 
         % panel 2
         \coordinate (milky way) at (6cm,0);
-        \node[inner sep = -10pt] at (milky way) {
-            \includegraphics[width = 5cm]{
-                milky_way_transparent_crop_small.png}};
-        \draw[speed arrow] (milky way) +(-90:0.8cm) arc [
-                    start angle = -90, end angle = -170, radius = 0.8cm];
-        \draw[
-                transparent,
-                decorate,
-                decoration = {
-                    text along path,
-                    text = {|\tiny\color{\defaulttextcolor}|230 km/s},
-                    reverse path}]
-            ($(milky way) + (-70:1.1cm)$) arc [
-                    start angle = -70, end angle = -150, radius = 1.1cm];
-        \draw[guide line] (dm halo) circle [radius = 0.4cm];
-        \draw[guide line] (milky way) circle [radius = 1.7cm];
-        \draw[guide line]
-            ($(milky way) + (110:1.7cm)$) -- ($(dm halo) + (110:0.4cm)$);
-        \draw[guide line]
-            ($(milky way) + (-110:1.7cm)$) -- ($(dm halo) + (-110:0.4cm)$);
+        \begin{scope}[visible on = <2->]
+            \node[inner sep = -10pt] at (milky way) {
+                \includegraphics[width = 5cm]{
+                    milky_way_transparent_crop_small.png}};
+            \draw[speed arrow]
+                (milky way) +(-90:0.8cm)
+                arc [
+                    start angle = -90,
+                    end angle = -170,
+                    radius = 0.8cm];
+            \draw[
+                    transparent,
+                    decorate,
+                    decoration = {
+                        text along path,
+                        text = {|\tiny\color{\defaulttextcolor}|230 km/s},
+                        reverse path}]
+                ($(milky way) + (-70:1.1cm)$)
+                arc [
+                    start angle = -70,
+                    end angle = -150,
+                    radius = 1.1cm];
+            \draw[guide line] (dm halo) circle [radius = 0.4cm];
+            \draw[guide line] (milky way) circle [radius = 1.7cm];
+            \draw[guide line]
+                ($(milky way) + (110:1.7cm)$) -- ($(dm halo) + (110:0.4cm)$);
+            \draw[guide line]
+                ($(milky way) + (-110:1.7cm)$) -- ($(dm halo) + (-110:0.4cm)$);
+        \end{scope}
         
         % panel 3
         \coordinate (sun) at (6cm,-4cm);
-        \node[inner sep = 0pt] at (sun) {
-            \includegraphics[width = 0.8cm]{sun_transparent.png}};
-        \draw[very thin, white!30!transparent] (sun) circle [radius = 1.3cm];
-        \draw[speed arrow] (sun) +(105:1.7cm) arc [radius = 1.7cm, start angle = 105, end angle = 75] node[above, pos = 0.5, font = \tiny] {30 km/s};
-        \draw[speed arrow] (sun) +(-75:1.7cm) arc [radius = 1.7cm, start angle = -75, end angle = -105];
-        \node[inner sep = 0pt] (earth down) at ($(sun) + (-90:1.3cm)$) {
-            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
-        \node[inner sep = 0pt] (earth up) at ($(sun) + (90:1.3cm)$) {
-            \includegraphics[width = 0.5cm]{earth_transparent_small.png}};
-        \draw[guide line] (sun) circle [radius = 1.7cm];
-        \draw[guide line]
-            ($(milky way) + (-90:1cm)$) -- ($(sun) + (140:1.7cm)$);
-        \draw[guide line]
-            ($(milky way) + (-90:1cm)$) -- ($(sun) + (40:1.7cm)$);
+        \begin{scope}[visible on = <3->]
+            \node[inner sep = 0pt] at (sun) {
+                \includegraphics[width = 0.8cm]{sun_transparent.png}};
+            \draw[very thin, white!30!transparent]
+                (sun) circle [radius = 1.3cm];
+            \draw[speed arrow]
+                (sun) +(105:1.7cm)
+                arc [
+                    radius = 1.7cm,
+                    start angle = 105,
+                    end angle = 75]
+                node [above, pos = 0.5, font = \tiny] {30 km/s};
+            \draw[speed arrow]
+                (sun) +(-75:1.7cm)
+                arc [
+                    radius = 1.7cm,
+                    start angle = -75,
+                    end angle = -105];
+            \node[inner sep = 0pt]
+                (earth down) at ($(sun) + (-90:1.3cm)$) {
+                    \includegraphics[width = 0.5cm]{
+                        earth_transparent_small.png}};
+            \node[inner sep = 0pt]
+                (earth up) at ($(sun) + (90:1.3cm)$) {
+                    \includegraphics[width = 0.5cm]{
+                        earth_transparent_small.png}};
+            \draw[guide line] (sun) circle [radius = 1.7cm];
+            \draw[guide line]
+                ($(milky way) + (-90:1cm)$) -- ($(sun) + (140:1.7cm)$);
+            \draw[guide line]
+                ($(milky way) + (-90:1cm)$) -- ($(sun) + (40:1.7cm)$);
+        \end{scope}
         
         % panel 4
         \coordinate (earth) at (0cm,-4cm);
-        \node[inner sep = 0pt] at (earth) {
-            \includegraphics[width = 2.4cm]{earth_transparent_small.png}};
-        %\draw[stealth-] ($(earth) + (120:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (140:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (160:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (180:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (200:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (220:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (240:1.3cm)$) -- +(-1.5cm,0);
-        %\draw[stealth-] ($(earth) + (260:1.3cm)$) -- +(-1.5cm,0);
+        \begin{scope}[visible on = <4->]
+            \node[inner sep = 0pt] at (earth) {
+                \includegraphics[width = 2.4cm]{earth_transparent_small.png}};
 
-        \node at ($(earth) + (-2.0cm,0.99)$) [above = 0.2cm, font = \tiny] {Pimeän aineen tuuli};
-        \draw[dm wind b, -stealth] ($(earth) + (-3.0cm,-0.99)$) -- +(2.1cm,0);
-        %\draw[-stealth] ($(earth) + (-3.0cm,-0.66)$) -- +(1.85cm,0);
-        \draw[dm wind a, -stealth] ($(earth) + (-3.0cm,-0.33)$) -- +(1.75cm,0);
-        %\draw[-stealth] ($(earth) + (-3.0cm,0)$) -- +(1.7cm,0);
-        \draw[dm wind a, -stealth] ($(earth) + (-3.0cm,0.33)$) -- +(1.75cm,0);
-        %\draw[-stealth] ($(earth) + (-3.0cm,0.66)$) -- +(1.85cm,0);
-        \draw[dm wind b, -stealth] ($(earth) + (-3.0cm,0.99)$) -- +(2.1cm,0);
-        \draw[guide line] (earth down) circle [radius = 0.4cm];
-        \draw[guide line] (earth) circle [radius = 1.6cm];
-        \draw[guide line]
-            ($(earth down) + (90:0.4cm)$) -- ($(earth) + (60:1.6cm)$);
-        \draw[guide line]
-            ($(earth down) + (-90:0.4cm)$) -- ($(earth) + (-90:1.6cm)$);
+            \node at ($(earth) + (-2.0cm,0.99)$) [above = 0.2cm, font = \tiny] {
+                Pimeän aineen tuuli};
+            \draw[dm wind b, -stealth]
+                ($(earth) + (-3.0cm,-0.99)$) -- +(2.1cm,0);
+            \draw[dm wind a, -stealth]
+                ($(earth) + (-3.0cm,-0.33)$) -- +(1.75cm,0);
+            \draw[dm wind a, -stealth]
+                ($(earth) + (-3.0cm,0.33)$) -- +(1.75cm,0);
+            \draw[dm wind b, -stealth]
+                ($(earth) + (-3.0cm,0.99)$) -- +(2.1cm,0);
+            \draw[guide line]
+                (earth down) circle [radius = 0.4cm];
+            \draw[guide line]
+                (earth) circle [radius = 1.6cm];
+            \draw[guide line]
+                ($(earth down) + (90:0.4cm)$) -- ($(earth) + (60:1.6cm)$);
+            \draw[guide line]
+                ($(earth down) + (-90:0.4cm)$) -- ($(earth) + (-90:1.6cm)$);
+        \end{scope}
 
     \end{tikzpicture}
 \end{frame}
@@ -789,7 +876,9 @@ end
             xtick = \empty,
             ytick = \empty
         ]
-            \addplot[opacity = 0.7] graphics [xmin=-2,xmax=2,ymin=-2,ymax=2] {directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png};
+            \addplot [visible on = <2->, opacity = 0.7]
+                graphics [xmin=-2,xmax=2,ymin=-2,ymax=2] {
+                    directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png};
 
             \addplot+ [mark = none, solid, color = black!80!white]
                 table {star_map/horizontal_line_0.dat};
@@ -813,17 +902,37 @@ end
                 table {star_map/vertical_line_4.dat};
             \draw[color = black!80!white] (0,0) circle [radius=2];
 
-            \addplot+[mark = *, mark color = white, color=white]
+            \addplot+ [mark = *, mark color = white, color=white]
                 table {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-                node [pos = 0.5, anchor = east, color = \defaulttextcolor, font = \tiny] {Joutsen};
-            \addplot+[mark = *, mark color = white, color=white]
+                node [
+                        pos = 0.5,
+                        anchor = east,
+                        color = \defaulttextcolor,
+                        font = \tiny] {
+                    Joutsen};
+            \addplot+ [mark = *, mark color = white, color=white]
                 table {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat} 
-                node [pos = 0.5, anchor = west, color = \defaulttextcolor, font = \tiny] {Otava};
-            \addplot+[mark = *, mark color = white, color=white]
+                node [
+                        pos = 0.5,
+                        anchor = west,
+                        color = \defaulttextcolor,
+                        font = \tiny] {
+                    Otava};
+            \addplot+ [mark = *, mark color = white, color=white]
                 table {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat} 
-                node [pos = 0.5, anchor = north, color = \defaulttextcolor, font = \tiny] {Pieni Otava};
-            \addplot+[mark = *, color = red]
-                table {star_map/vlab_2025-03-06-21-00.dat};
+                node [
+                        pos = 0.5,
+                        anchor = north,
+                        color = \defaulttextcolor,
+                        font = \tiny] {
+                    Pieni Otava};
+            \addplot+ [mark = *, color = scp-blue-dark-1]
+                table {star_map/vlab_2025-03-06-21-00.dat}
+                node (dm wind) {};
+            \node[visible on = <1>]
+                (annot) at (0,0.5) [align = center, left, font = \tiny] {
+                    Maan liikkeen suunta\\ galaksin suhteen};
+            \draw[visible on = <1>, -stealth] (annot) to [out = 0, in = 90] (dm wind);
         \end{axis}
     \end{tikzpicture}
 \end{frame}
@@ -843,20 +952,20 @@ end
     pics/nucleus/.style = {
         code = {
             \begin{scope}[transform shape]
-            \pic at (113.90:0.6676) {proton};
-            \pic at (-177.89:0.6676){proton};
-            \pic at (40.41:0.6676) {proton};
-            \pic at (-21.08:0.6676) {proton};
-            \pic at (-53.65:0.6218) {neutron};
-            \pic at (-98.08:0.6676) {proton};
-            \pic at (8.77:0.6218) {neutron};
-            \pic at (85.01:0.6735) {neutron};
-            \pic at (144.30:0.6865) {neutron};
-            \pic at (-143.41:0.7038) {neutron};
-            \pic at (39.16:0.3022) {neutron};
-            \pic at (-124.90:0.2973) {neutron};
-            \pic at (132.23:0.3037) {proton};
-            \pic at (-29.05:0.2774) {proton};
+                \pic at (113.90:0.6676) {proton};
+                \pic at (-177.89:0.6676){proton};
+                \pic at (40.41:0.6676) {proton};
+                \pic at (-21.08:0.6676) {proton};
+                \pic at (-53.65:0.6218) {neutron};
+                \pic at (-98.08:0.6676) {proton};
+                \pic at (8.77:0.6218) {neutron};
+                \pic at (85.01:0.6735) {neutron};
+                \pic at (144.30:0.6865) {neutron};
+                \pic at (-143.41:0.7038) {neutron};
+                \pic at (39.16:0.3022) {neutron};
+                \pic at (-124.90:0.2973) {neutron};
+                \pic at (132.23:0.3037) {proton};
+                \pic at (-29.05:0.2774) {proton};
             \end{scope}
         }
     },
@@ -896,25 +1005,48 @@ end
     \begin{tikzpicture}
         \begin{scope}
             \shade[
+                    visible on = <1->,
                     shading = radial,
                     inner color = yellow!80!white!30!\defaultbgcolor,
                     outer color = \defaultbgcolor]
                 (0,0) circle [radius=3.0cm];
-            \node[circle, minimum size=1.0cm] (atom) at (0,0) {} pic[scale = 0.4] {nucleus};
-            \node at (0,0) [right = 0.3cm, font = \tiny, anchor = west] {atomiydin};
-            \node[circle, ball color = black!70!white] (dm) at (135:3.5cm) {};
-            \node at (135:3.5cm) [above right, font = \tiny] {pimeä aine};
-            \draw[-stealth] (45:3.5cm) -- (atom.north) -- (dm);
-            \draw[-stealth] (atom) -- +(-90:3cm);
-            \node[circle, minimum size=0.3cm] (ionize) at ($(atom) + (-60:3.5cm)$) {};
-            \pic at (ionize) [very thick, scale = 0.4] {electron};
-            \draw[-stealth] (atom) +(-60:2cm) -- (ionize);
-            \draw[photon] (atom) +(-110:2cm) -- +(-110:3.5cm) node [above, sloped, pos = 0.5, font = \tiny] {fotoni};
-            \node at (ionize) [below right, font = \tiny] {elektroni};
-            \node at (-2.0cm,0) [font = \tiny] {elektronipilvi};
-            %\node[circle, minimum size=0.8cm] at (2,0) {} pic[scale = 0.3] {nucleus};
+            \node[visible on = <1->]
+                at (-2.0cm,0) [font = \tiny] {
+                    elektronipilvi};
+            \node[visible on = <1->, circle, minimum size=1.0cm]
+                (atom) at (0,0) {}
+                pic [scale = 0.4] {nucleus};
+            \node[visible on = <1->]
+                at (0,0) [
+                    right = 0.3cm,
+                    font = \tiny,
+                    anchor = west] {
+                atomiydin};
+            \node[visible on = <1->, circle, ball color = black!70!white]
+                (dm) at (135:3.5cm) {};
+            \node[visible on = <1->]
+                at (135:3.5cm) [above right, font = \tiny] {
+                    pimeä aine};
+            \draw[visible on = <1->, -stealth]
+                (45:3.5cm) -- (atom.north) -- (dm);
+            \draw[visible on = <1->, -stealth]
+                (atom) -- +(-90:3cm);
+            \node[visible on = <2->, circle, minimum size=0.3cm]
+                (ionize) at ($(atom) + (-60:3.5cm)$) {};
+            \pic[visible on = <2->] at (ionize) [very thick, scale = 0.4] {
+                electron};
+            \draw[visible on = <2->, -stealth]
+                (atom) +(-60:2cm) -- (ionize);
+            \node[visible on = <2->]
+                at (ionize) [below right, font = \tiny] {
+                elektroni};
+            \draw[visible on = <3->, photon]
+                (atom) +(-110:2cm) -- +(-110:3.5cm)
+                node [above, sloped, pos = 0.5, font = \tiny] {
+                    fotoni};
         \end{scope}
         \begin{axis}[
+            visible on = <4->,
             at = {(4cm,-1.5cm)},
             width = 8cm,
             height = 5cm,
@@ -928,8 +1060,14 @@ end
             xtick = \empty,
             ytick = \empty
         ]
-            \addplot+ [\defaulttextcolor, -stealth] coordinates { (0,0.6) (1,1) } node[sloped, pos = 0.5, above, font = \tiny]{Sironnan todennäköisyys};
-            \addplot+ [\defaulttextcolor, -stealth] coordinates { (0,0.4) (1,0) } node[sloped, pos = 0.5, below, font = \tiny]{Energia};
+            \addplot+ [\defaulttextcolor, -stealth]
+                coordinates { (0,0.6) (1,1) }
+                node [sloped, pos = 0.5, above, font = \tiny] {
+                    Sironnan todennäköisyys};
+            \addplot+ [\defaulttextcolor, -stealth]
+                coordinates { (0,0.4) (1,0) }
+                node [sloped, pos = 0.5, below, font = \tiny]{
+                    Energia};
         \end{axis}
     \end{tikzpicture}
 \end{frame}
@@ -945,9 +1083,16 @@ end
                     inner color = yellow!80!white!30!\defaultbgcolor,
                     outer color = \defaultbgcolor]
                 (dm halo) circle [radius=3.0cm];
-            \node[circle, minimum size=1.0cm] (atom) at (0,0) [right, font = \tiny] {Atomiydin} pic[scale = 0.4] {nucleus};
-            \node[circle, ball color = black!70!white] (dm) at (135:3.5cm) [above right, font = \tiny] {Pimeä aine};
-            \draw[-stealth] (45:3.5cm) -- (atom.north) -- (dm);
+            \node[circle, minimum size=1.0cm]
+                (atom) at (0,0) [right, font = \tiny] {
+                    Atomiydin}
+                pic [scale = 0.4] {
+                    nucleus};
+            \node[circle, ball color = black!70!white]
+                (dm) at (135:3.5cm) [above right, font = \tiny] {
+                    Pimeä aine};
+            \draw[-stealth]
+                (45:3.5cm) -- (atom.north) -- (dm);
             %\node[circle, minimum size=0.8cm] at (2,0) {} pic[scale = 0.3] {nucleus};
         \end{scope}
     \end{tikzpicture}
@@ -975,63 +1120,202 @@ end
     }
     \begin{tikzpicture} [
     ]
-        \begin{scope}[shift = {(0,0)}]
-            \node (xenon) at (0,0) {\includegraphics[width = 4cm]{xenon_cryostat_render_fix.png}};
-            %\draw (0,0) -- +(1.0cm,0);
-            %\draw (0,0) -- +(0,1.0cm);
-            \fill[scp-green-light-1, opacity = 0.3] (-0.400,1.156) -- ++(0.412,0.224) -- ++(1.434,-0.022) -- ++(-0.04,-3.412) -- ++(-1.400,0.044) -- ++(-0.399,-0.444) -- cycle;
+        % Xenon tank
+        \begin{scope}[
+            visible on = <1->,
+            shift = {(0,0)}
+        ]
+            \node
+                (xenon) at (0,0) {
+                    \includegraphics[width = 4cm]{
+                        xenon_cryostat_render_fix.png}};
+            \fill[scp-green-light-1, opacity = 0.3]
+                (-0.400,1.156)
+                -- ++(0.412,0.224)
+                -- ++(1.434,-0.022)
+                -- ++(-0.04,-3.412)
+                -- ++(-1.400,0.044)
+                -- ++(-0.399,-0.444)
+                -- cycle;
             \foreach \i in {0, 1, 2, 3}
             {
                 \pgfmathsetmacro{\xshift}{0.1 + \i*0.4}
                 \pgfmathsetmacro{\topyshift}{3.204 + \i*0.012}
                 \pgfmathsetmacro{\botyshift}{-1.9 - \i*0.018}
-                \draw[black, stealth-] (\xshift,\botyshift) -- ++(0,\topyshift);
+                \draw[black, stealth-]
+                    (\xshift,\botyshift) -- ++(0,\topyshift);
             }
             \foreach \i in {0, 1, 2}
             {
                 \pgfmathsetmacro{\xshift}{0.3 + \i*0.4}
                 \pgfmathsetmacro{\topyshift}{1.2 - \i*0.006}
                 \pgfmathsetmacro{\botyshift}{-1.9 - \i*0.018}
-                \node at (\xshift,\topyshift) [text = black, font = \tiny] {$+$};
-                \node at (\xshift,\botyshift) [text = black, font = \tiny] {$-$};
+                \node
+                    at (\xshift,\topyshift) [text = black, font = \tiny] {$+$};
+                \node
+                    at (\xshift,\botyshift) [text = black, font = \tiny] {$-$};
             }
-            \node (annot) at ($(xenon) + (-1.1,0)$) [inner sep = 1pt, align = center, draw = black, fill = white, text opacity = 1, fill opacity = 0.4, font = \tiny, text = \defaultbgcolor] {nestemäistä\\ jalokaasua};
-            \draw[black, -stealth] (annot) to[out = -90, in = 180] (-0.2,-0.5);
+            \node (annot) at ($(xenon) + (0,2.2)$) [
+                    inner sep = 1pt,
+                    align = center,
+                    draw = black,
+                    fill = white,
+                    text opacity = 1,
+                    fill opacity = 0.6,
+                    font = \footnotesize,
+                    text = \defaultbgcolor] {
+                nestemäistä\\ jalokaasua};
+            \draw[black, -stealth]
+                (annot) to [out = -90, in = 90] (-0.15,1.0);
         \end{scope}
-        \begin{scope}[shift = {(6.0cm,1.5cm)}]
-            \coordinate (crystal) at (0, 0);
-            \node (germanium) at (crystal) {
-                \includegraphics[width = 6cm, trim = {0 6cm 0 1.3cm}, clip]{edelweiss_bolo.jpg}};
-            \node at (crystal) [opacity = 0.8]{
-                \includegraphics[width = 6cm, trim = {0 6cm 0 1.3cm}, clip]{edelweiss_bolo_mask.png}};
-            \node at (germanium) [above]{Germaniumkide};
-        \end{scope}
+
+        % Germanium crystal
         \begin{scope}[
+            visible on = <2->,
+            shift = {(6.0cm,1.5cm)}
+        ]
+            \coordinate
+                (crystal) at (0, 0);
+            \node
+                (germanium) at (crystal) {
+                    \includegraphics[
+                            width = 6cm,
+                            trim = {0 6cm 1cm 1.3cm},
+                            clip] {
+                        edelweiss_bolo.jpg}};
+            \node
+                at (crystal) [opacity = 0.8]{
+                    \includegraphics[
+                            width = 6cm,
+                            trim = {0 6cm 1cm 1.3cm},
+                            clip] {
+                        edelweiss_bolo_mask.png}};
+            \node
+                at (germanium) [above = 1.6cm] {
+                    Germaniumkide};
+        \end{scope}
+
+        % Germanium cut
+        \begin{scope}[
+            visible on = <3->,
             shift = {(6.0cm,-1.5cm)},
             germanium block draw/.style = {draw = white},
             germanium block fill/.style = {fill = black!85!white},
         ]
-            \fill[germanium block fill] (1.7,0) arc[x radius = 1.7, y radius = 0.85, start angle = 0, end angle = 240] -- (0,0) -- cycle;
-            \fill[germanium block fill] (-1.7,0) arc[x radius = 1.7, y radius = 0.85, start angle = 180, end angle = 240] -- ++(0,-1.7) arc[x radius = 1.7, y radius = 0.85, start angle = 240, end angle = 180] -- cycle;
-            \fill[germanium block fill] (0,0) -- (240:1.7 and 0.85) -- ++(0,-1.7) -- (0,-1.7) --cycle;
-            \fill[germanium block fill] (0,0) -- ++(1.7,0) -- ++(0,-1.7) -- ++(-1.7,0) --cycle;
-            \fill[white!50!black] (0.12,0) arc[x radius = 0.12, y radius = 0.06, start angle = 0, end angle = 230] -- (0,0) -- cycle;
+            \fill[germanium block fill]
+                (1.7,0) arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 0,
+                    end angle = 240]
+                -- (0,0) -- cycle;
+            \fill[germanium block fill]
+                (-1.7,0)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 180,
+                    end angle = 240]
+                -- ++(0,-1.7)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 240,
+                    end angle = 180]
+                -- cycle;
+            \fill[germanium block fill]
+                (0,0)
+                -- (240:1.7 and 0.85)
+                -- ++(0,-1.7)
+                -- (0,-1.7)
+                --cycle;
+            \fill[germanium block fill]
+                (0,0)
+                -- ++(1.7,0)
+                -- ++(0,-1.7)
+                -- ++(-1.7,0)
+                --cycle;
+            \fill[white!50!black]
+                (0.12,0)
+                arc [
+                    x radius = 0.12,
+                    y radius = 0.06,
+                    start angle = 0,
+                    end angle = 230]
+                -- (0,0)
+                -- cycle;
             \foreach \i in {2,...,13}
             {
                 \pgfmathsetmacro{\xradius}{\i*0.12}
                 \pgfmathsetmacro{\yradius}{\i*0.06}
-                \draw[thin, white!50!black] (\xradius,0) arc[x radius = \xradius, y radius = \yradius, start angle = 0, end angle = 240];
+                \draw[thin, white!50!black]
+                    (\xradius,0)
+                    arc [
+                        x radius = \xradius,
+                        y radius = \yradius,
+                        start angle = 0,
+                        end angle = 240];
             }
             \foreach \i in {1,...,16}
             {
                 \pgfmathsetmacro{\yshift}{\i*-0.1}
-                \draw[thin, white!50!black] (-1.7,\yshift) arc[x radius = 1.7, y radius = 0.85, start angle = 180, end angle = 240];
+                \draw[thin, white!50!black]
+                    (-1.7,\yshift)
+                    arc [
+                        x radius = 1.7,
+                        y radius = 0.85,
+                        start angle = 180,
+                        end angle = 240];
             }
-            \draw[germanium block draw] (-1.7,0) arc[x radius = 1.7, y radius = 0.85, start angle = 180, end angle = 240] -- ++(0,-1.7) arc[x radius = 1.7, y radius = 0.85, start angle = 240, end angle = 180] -- cycle;
-            \draw[germanium block draw] (0,0) -- (240:1.7 and 0.85) -- ++(0,-1.7) -- (0,-1.7) --cycle;
-            \draw[germanium block draw] (0,0) -- ++(1.7,0) -- ++(0,-1.7) -- ++(-1.7,0) --cycle;
-            \draw[germanium block draw] (1.7,0) arc[x radius = 1.7, y radius = 0.85, start angle = 0, end angle = 240] -- (0,0) -- cycle;
-            \fill[fill = yellow!50!gray] (1.7,0) arc[x radius = 1.7, y radius = 0.85, start angle = 0, end angle = 240] -- (240:1.65 and 0.825) arc[x radius = 1.65, y radius = 0.825, start angle = 240, end angle = 0] -- cycle;
+            \draw[germanium block draw]
+                (-1.7,0)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 180,
+                    end angle = 240]
+                -- ++(0,-1.7)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 240,
+                    end angle = 180]
+                -- cycle;
+            \draw[germanium block draw]
+                (0,0)
+                -- (240:1.7 and 0.85)
+                -- ++(0,-1.7)
+                -- (0,-1.7)
+                --cycle;
+            \draw[germanium block draw]
+                (0,0)
+                -- ++(1.7,0)
+                -- ++(0,-1.7)
+                -- ++(-1.7,0)
+                --cycle;
+            \draw[germanium block draw]
+                (1.7,0)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 0,
+                    end angle = 240]
+                -- (0,0)
+                -- cycle;
+            \fill[fill = yellow!50!gray]
+                (1.7,0)
+                arc [
+                    x radius = 1.7,
+                    y radius = 0.85,
+                    start angle = 0,
+                    end angle = 240]
+                -- (240:1.65 and 0.825)
+                arc [
+                    x radius = 1.65,
+                    y radius = 0.825,
+                    start angle = 240,
+                    end angle = 0]
+                -- cycle;
 
             \foreach \i in {1, 2, 3}
             {
@@ -1055,73 +1339,114 @@ end
         hit atom/.style = {ball color = scp-blue-dark-1},
     ]
         % frame 1
-        \begin{scope}[shift = {(0,0)}]
-            \node[circle] (atom1) at (0.75, 0.75) {};
-            \node[circle, ball color = black!70!white] (dm1) at (-0.75, 0.3) {};
-            \draw[-stealth] (dm1) -- (atom1);
-            \shade[hit atom] (atom1) circle [radius = 0.1cm];
+        \begin{scope}[
+            visible on = <1->,
+            shift = {(0,0)}
+        ]
+            \node[circle]
+                (atom1) at (0.75, 0.75) {};
+            \node[circle, ball color = black!70!white]
+                (dm1) at (-0.75, 0.3) {};
+            \draw[-stealth]
+                (dm1) -- (atom1);
+            \shade[hit atom]
+                (atom1) circle [radius = 0.1cm];
             \foreach \x in {0, 1.5, 3.0}
                 \foreach \y in {0, 1.5, 3.0}
-                    \shade[background atom] (\x,\y) circle [radius = 0.1cm];
-            \shade[background atom] ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+                    \shade[background atom]
+                        (\x,\y) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \draw[-stealth]
+                (-0.2cm,-2.2cm)
+                -- (-0.2cm,-0.5cm)
+                node [sloped, pos = 0.5, above, font = \tiny] {
+                    Energia};
+            \begin{scope}[shift = {(0,-0.3cm)}]
+                \shade[hit atom]
+                    (0.75cm,-1.5cm) circle [radius = 0.1cm];
+                \draw (0,-0.6cm)
+                    ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                    .. (1.69cm, -0.78cm)
+                    ..controls (1.9cm,-0.9cm)
+                    .. (2.25cm,-0.7cm);
+            \end{scope}
         \end{scope}
         
         % frame 2
-        \begin{scope}[shift = {(5.0,0)}]
-            \node[circle] (atom2) at (0.75, 0.75) {};
-            \node[circle] (dm21) at (-0.75, 0.3) {};
-            \node[circle, ball color = black!70!white] (dm22) at (-0.75, 1.2) {};
-            \draw[-stealth] (dm21) -- (atom2.west) -- (dm22);
-            \draw[-stealth] (atom2) +(0:0.15) -- ++(15:0.75);
-            \shade[hit atom] (atom2) + (0.15,0) circle [radius = 0.1cm];
+        \begin{scope}[
+            visible on = <2->,
+            shift = {(5.0,0)}
+        ]
+            \node[circle]
+                (atom2) at (0.75, 0.75) {};
+            \node[circle]
+                (dm21) at (-0.75, 0.3) {};
+            \node[circle, ball color = black!70!white]
+                (dm22) at (-0.75, 1.2) {};
+            \draw[-stealth]
+                (dm21) -- (atom2.west) -- (dm22);
+            \draw[-stealth]
+                (atom2) +(0:0.15) -- ++(15:0.75);
+            \shade[hit atom]
+                (atom2) + (0.15,0) circle [radius = 0.1cm];
             \foreach \x in {0, 1.5, 3.0}
                 \foreach \y in {0, 1.5, 3.0}
-                    \shade[background atom] (\x,\y) circle [radius = 0.1cm];
-            \shade[background atom] ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+                    \shade[background atom]
+                        (\x,\y) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \begin{scope}[shift = {(0,-0.3cm)}]
+                \shade[hit atom]
+                    (0.9cm,-1.3cm) circle [radius = 0.1cm];
+                \draw (0,-0.6cm)
+                    ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                    .. (1.69cm, -0.78cm)
+                    ..controls (1.9cm,-0.9cm)
+                    .. (2.25cm,-0.7cm);
+            \end{scope}
         \end{scope}
 
         % frame 3
-        \begin{scope}[shift = {(10.0,0)}]
-            \coordinate (atom31) at (0.75, 0.75) {};
-            \coordinate (atom32) at (1.5, 1.5) {};
-            \coordinate (atom33) at (2.25,2.25) {};
-            \shade[hit atom] ($(atom31) + (1.125,1.125)$) circle [radius = 0.1cm];
+        \begin{scope}[
+            visible on = <3->,
+            shift = {(10.0,0)}
+        ]
+            \coordinate
+                (atom31) at (0.75, 0.75) {};
+            \coordinate
+                (atom32) at (1.5, 1.5) {};
+            \coordinate
+                (atom33) at (2.25,2.25) {};
+            \shade[hit atom]
+                ($(atom31) + (1.125,1.125)$) circle [radius = 0.1cm];
             \foreach \x in {0, 1.5, 3.0}
                 \foreach \y in {0, 1.5, 3.0}
-                    \shade[background atom] (\x,\y) circle [radius = 0.1cm];
-            \shade[background atom] ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
-            \shade[background atom] ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
-        \end{scope}
-        \draw[-stealth] (-0.2cm,-2.2cm) -- (-0.2cm,-0.5cm) node [sloped, pos = 0.5, above, font = \tiny] {Energia};
-        %\draw (-0.2cm,-2.2cm) -- +(12cm,0);
-        \begin{scope}[shift = {(0,-0.3cm)}]
-            \shade[hit atom] (0.75cm,-1.5cm) circle [radius = 0.1cm];
-            \draw (0,-0.6cm)
-                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
-                .. (1.69cm, -0.78cm)
-                ..controls (1.9cm,-0.9cm)
-                .. (2.25cm,-0.7cm);
-        \end{scope}
-        \begin{scope}[shift = {(5.0cm,-0.3cm)}]
-            \shade[hit atom] (0.9cm,-1.3cm) circle [radius = 0.1cm];
-            \draw (0,-0.6cm)
-                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
-                .. (1.69cm, -0.78cm)
-                ..controls (1.9cm,-0.9cm)
-                .. (2.25cm,-0.7cm);
-        \end{scope}
-        \begin{scope}[shift = {(10.0cm,-0.3cm)}]
-            \shade[hit atom] (1.875cm,-0.7cm) circle [radius = 0.1cm];
-            \draw (0,-0.6cm)
-                ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
-                .. (1.69cm, -0.78cm)
-                ..controls (1.9cm,-0.9cm)
-                .. (2.25cm,-0.7cm);
+                    \shade[background atom]
+                        (\x,\y) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(0,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,0) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \shade[background atom]
+                ($(1.5,1.5) + (0.75, 0.75)$) circle [radius = 0.1cm];
+            \begin{scope}[shift = {(0,-0.3cm)}]
+                \shade[hit atom]
+                    (1.875cm,-0.7cm) circle [radius = 0.1cm];
+                \draw (0,-0.6cm)
+                    ..controls (1.05cm,-3.0cm) and (1.0cm,-0.5cm)
+                    .. (1.69cm, -0.78cm)
+                    ..controls (1.9cm,-0.9cm)
+                    .. (2.25cm,-0.7cm);
+            \end{scope}
         \end{scope}
     \end{tikzpicture}
     \nothing
@@ -1148,7 +1473,8 @@ end
             xtick = \empty,
             ytick = \empty
         ]
-            \addplot graphics [xmin=-2,xmax=2,ymin=-2,ymax=2] {esurf_Ge.png};
+            \addplot
+                graphics [xmin=-2, xmax=2, ymin=-2, ymax=2] {esurf_Ge.png};
 
             \addplot+ [mark = none, solid, color = black!80!white]
                 table {star_map/horizontal_line_0.dat};
@@ -1170,7 +1496,8 @@ end
                 table {star_map/vertical_line_3.dat};
             \addplot+ [mark = none, solid, color = black!80!white]
                 table {star_map/vertical_line_4.dat};
-            \draw[color = black!80!white] (0,0) circle [radius=2];
+            \draw[color = black!80!white]
+                (0,0) circle [radius=2];
         \end{axis}
     \end{tikzpicture}
 \end{frame}
@@ -1197,7 +1524,18 @@ end
             xtick = \empty,
             ytick = \empty
         ]
-            \addplot[opacity = 0.7] graphics [xmin=-2,xmax=2,ymin=-2,ymax=2] {transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png};
+            \addplot[visible on = <1>, opacity = 0.7]
+                graphics [xmin=-2, xmax=2, ymin=-2, ymax=2] {
+                    transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png};
+            \addplot[visible on = <2>, opacity = 0.7]
+                graphics [xmin=-2, xmax=2, ymin=-2, ymax=2] {
+                    transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png};
+            \addplot[visible on = <3>, opacity = 0.7]
+                graphics [xmin=-2, xmax=2, ymin=-2, ymax=2] {
+                    transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png};
+            \addplot[visible on = <4>, opacity = 0.7]
+                graphics [xmin=-2, xmax=2, ymin=-2, ymax=2] {
+                    transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png};
 
             \addplot+ [mark = none, solid, color = black!80!white]
                 table {star_map/horizontal_line_0.dat};
@@ -1219,25 +1557,131 @@ end
                 table {star_map/vertical_line_3.dat};
             \addplot+ [mark = none, solid, color = black!80!white]
                 table {star_map/vertical_line_4.dat};
-            \draw[color = black!80!white] (0,0) circle [radius=2];
+            \draw[color = black!80!white]
+                (0,0) circle [radius=2];
 
-            \addplot+[mark = *, mark color = white, color=white]
-                table {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-                node [pos = 0.5, anchor = east, color = \defaulttextcolor, font = \tiny] {Joutsen};
-            \addplot+[mark = *, mark color = white, color=white]
-                table {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat} 
-                node [pos = 0.5, anchor = west, color = \defaulttextcolor, font = \tiny] {Otava};
-            \addplot+[mark = *, mark color = white, color=white]
-                table {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat} 
-                node [pos = 0.5, anchor = north, color = \defaulttextcolor, font = \tiny] {Pieni Otava};
-            \addplot+[mark = *, color = red]
-                table {star_map/vlab_2025-03-06-21-00.dat};
+            \begin{scope}[visible on = <1>]
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+                    node [
+                            pos = 0.5,
+                            anchor = east,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Joutsen};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = west,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Otava};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = north,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Pieni Otava};
+                \addplot+ [mark = *, color = red]
+                    table {star_map/vlab_2025-03-06-21-00.dat};
+            \end{scope}
+
+            \begin{scope}[visible on = <2>]
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+                    node [
+                            pos = 0.5,
+                            anchor = east,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Joutsen};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = west,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Otava};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = north,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Pieni Otava};
+                \addplot+ [mark = *, color = red]
+                    table {star_map/vlab_2025-03-06-23-00.dat};
+            \end{scope}
+
+            \begin{scope}[visible on = <3>]
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+                    node [
+                            pos = 0.5,
+                            anchor = east,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Joutsen};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = west,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Otava};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = north,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Pieni Otava};
+                \addplot+ [mark = *, color = red]
+                    table {star_map/vlab_2025-03-07-01-00.dat};
+            \end{scope}
+
+            \begin{scope}[visible on = <4>]
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+                    node [
+                            pos = 0.5,
+                            anchor = east,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Joutsen};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = west,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Otava};
+                \addplot+ [mark = *, mark color = white, color=white]
+                    table {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat} 
+                    node [
+                            pos = 0.5,
+                            anchor = north,
+                            color = \defaulttextcolor,
+                            font = \tiny] {
+                        Pieni Otava};
+                \addplot+ [mark = *, color = red]
+                    table {star_map/vlab_2025-03-07-03-00.dat};
+            \end{scope}
         \end{axis}
     \end{tikzpicture}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Päivämodulaatio}
+    \frametitle{Päivittäinen vaihtelu}
+    \nothing{
     \begin{itemize}
         \item Ionisaatioon vaadittu energia suuntariippuvainen
         \item Aiheuttaa pävittäisen vaihtelun havaittavissa olevien sirontojen määrään
@@ -1245,6 +1689,32 @@ end
         \item Sen havaitseminen olisi varma merkki pimeän aineen löydöstä
         \item Yksi ydinkysymyksiä, joihin väitöskirjassani pyrin vastaamaan on, missä mmärin päivittäinen vaihtelu on havaittavissa seuraavan sukupolven kristallipohjaisissa havaitsimissa ja missä määrin se auttaa pimeän aineen havaitsemista
     \end{itemize}
+    }
+    \begin{tikzpicture}
+        \begin{axis}[
+            at = {(0,0)},
+            width = 8cm,
+            height = 5cm,
+            axis x line = bottom,
+            axis y line = left,
+            xmin = 155,
+            xmax = 156,
+            ymin = 3000,
+            ymax = 10000,
+            ytick = \empty,
+            xtick = {155, 155.5, 156},
+            xticklabels = {00:00, 12:00, 24:00},
+            xlabel = {Kellonaika},
+            ylabel = {Havaintojen määrä}
+        ]
+            \addplot+ table {daily_modulation.dat};
+        \end{axis}
+        \node[visible on = <2->]
+            at (3.0,-1) [align = center, below] {
+                Avainkysymyksiä:\\
+                Mitä päivittäinen vaihtelu kertoo pimän aineen vuorovaikutuksista/jakaumasta?\\
+                Auttaako päivittäinen vaihtelu pimeän aineen löytämisessä?};
+    \end{tikzpicture}
 \end{frame}
 
 \end{document}

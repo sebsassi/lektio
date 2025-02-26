@@ -1,4 +1,5 @@
 import json
+import argparse
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -170,8 +171,11 @@ if __name__ == "__main__":
         }
     }
 
-    date = "2025-03-06-21-00"
-    time = coordinates.TimeInterval("2025-03-06-21-00")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("date", type=str)
+    args = parser.parse_args()
+
+    time = coordinates.TimeInterval(args.date)
 
     latitude = 60.178269*np.pi/180
     longitude = 24.938776*np.pi/180
@@ -196,11 +200,11 @@ if __name__ == "__main__":
     
     for name, constellation in constellations_proj.items():
         graph = make_constellation_graph(name, constellation)
-        with open(f"constellation_{name.replace(' ', '-')}_{date}.dat", "w") as f:
+        with open(f"constellation_{name.replace(' ', '-')}_{args.date}.dat", "w") as f:
             for line in graph:
                 print(line)
                 for coord in line:
                     f.write(f"{coord[0]} {coord[1]}\n")
                 f.write("\n")
     
-    np.savetxt(f"vlab_{date}.dat", np.array(vlab_proj).T)
+    np.savetxt(f"vlab_{args.date}.dat", np.array(vlab_proj).T)
