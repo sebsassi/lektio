@@ -1054,25 +1054,32 @@ end
             \coordinate
                 (atom2) at (0,-3);
             
+            % electron clouds
+            \fill[
+                visible on = <2->,
+                yellow!80!white,
+                path fading = electron cloud]
+            (atom2) circle [radius=3.0cm];
+            \fill[visible on = <1>, \defaultbgcolor]
+                (atom2) circle [radius = 3.0cm];
             \fill[
                     visible on = <1->,
                     yellow!80!white,
                     path fading = electron cloud]
                 (atom1) circle [radius=3.0cm];
-            \fill[
-                    visible on = <1->,
-                    yellow!80!white,
-                    path fading = electron cloud]
-                (atom2) circle [radius=3.0cm];
+            \fill[visible on = <1>, \defaultbgcolor]
+                (atom1) circle [radius = 3.0cm];
             
+            % nuclei
             \node[visible on = <1->, circle, minimum size = 1.0cm]
                 (atom1 node) at (atom1) {}
                 pic [scale = 0.4] {nucleus};
-            \node[visible on = <1->, circle, minimum size = 1.0cm]
+            \node[visible on = <2->, circle, minimum size = 1.0cm]
                 (atom2 node) at (atom2) {}
-                pic [shift = {(atom2)}, scale = 0.4] {nucleus};
+                pic [visible on = <2->, shift = {(atom2)}, scale = 0.4] {nucleus};
             
-            \node[visible on = <1->]
+            % annotations
+            \node[visible on = <2->]
                 at (-2.0cm,0) [font = \scriptsize] {
                     elektronipilvi};
             \node[visible on = <1->]
@@ -1082,6 +1089,7 @@ end
                         anchor = west] {
                     atomiydin};
                 
+            % dm
             \node[visible on = <1->, circle, ball color = black!70!white]
                 (dm) at (145:3.0cm) {};
             \node[visible on = <1->]
@@ -1094,34 +1102,33 @@ end
                 (atom1 node.south) -- (atom2 node.north);
             \coordinate
                 (ionize base) at ($(atom1) + (1.0,-1.5)$);
-            \node[visible on = <2->, circle, minimum size=0.3cm]
+            \node[visible on = <3->, circle, minimum size=0.3cm]
                 (ionize) at ($(ionize base) + (-10:1)$) {};
-            \pic at (ionize) [very thick, scale = 0.4] {
+            \pic at (ionize) [visible on = <3->, very thick, scale = 0.4] {
                     electron};
-            \draw[visible on = <2->, scatter arrow]
+            \draw[visible on = <3->, scatter arrow]
                 (ionize base) -- (ionize);
-            %\draw[visible on = <2->, scatter arrow]
-            %    (atom1) +(-60:2cm) -- (ionize);
-            \node[visible on = <2->]
+                
+            \node[visible on = <3->]
                 at (ionize) [below right, font = \scriptsize] {
                     elektroni};
             \coordinate
                 (light base) at ($(atom1) + (-0.9,-1.6)$);
-            \draw[visible on = <3->, photon]
+            \draw[visible on = <4->, photon]
                 (light base) -- +(-170:1)
                 node [above, sloped, pos = 0.5, font = \scriptsize] {
                     valoa};
         \end{scope}
         \begin{axis}[
-            visible on = <4->,
-            at = {(4cm,-1.5cm)},
+            visible on = <5->,
+            at = {(4cm,-0.5cm)},
             width = 8cm,
-            height = 5cm,
+            height = 4cm,
             xmin = -0.1,
             xmax = 1.2,
             ymin = -0.2,
             ymax = 1.2,
-            xlabel = {Ytimen massa},
+            xlabel = {Atomin massa},
             axis x line = bottom,
             axis y line = left,
             xtick = \empty,
@@ -1134,6 +1141,27 @@ end
                     Sironnan todennäköisyys};
             \addplot+ [\defaulttextcolor, -stealth]
                 coordinates { (0,0.4) (1,0) }
+                node [sloped, pos = 0.5, below, font = \scriptsize]{
+                    Energia};
+        \end{axis}
+        \begin{axis}[
+            visible on = <6->,
+            at = {(4cm,-3.0cm)},
+            width = 8cm,
+            height = 3cm,
+            xmin = -0.1,
+            xmax = 1.2,
+            ymin = -0.2,
+            ymax = 1.2,
+            xlabel = {Pimeän aineen massa},
+            axis x line = bottom,
+            axis y line = left,
+            xtick = \empty,
+            ytick = \empty,
+            every plot/.append style = {very thick}
+        ]
+            \addplot+ [\defaulttextcolor, -stealth]
+                coordinates { (0,0.0) (1,1) }
                 node [sloped, pos = 0.5, below, font = \scriptsize]{
                     Energia};
         \end{axis}
@@ -1416,9 +1444,9 @@ end
         ]
             \node[circle]
                 (atom1) at (0.75, 0.75) {};
-            \node[circle, ball color = black!70!white]
+            \node[visible on = <2->, circle, ball color = black!70!white]
                 (dm1) at (-0.75, 0.3) {};
-            \draw[scatter arrow]
+            \draw[visible on = <2->, scatter arrow]
                 (dm1) -- (atom1);
             \shade[hit atom]
                 (atom1) circle [radius = 0.1cm];
@@ -1450,7 +1478,7 @@ end
         
         % frame 2
         \begin{scope}[
-            visible on = <2->,
+            visible on = <3->,
             shift = {(5.0,0)}
         ]
             \node[circle]
@@ -1488,7 +1516,7 @@ end
 
         % frame 3
         \begin{scope}[
-            visible on = <3->,
+            visible on = <4->,
             shift = {(10.0,0)}
         ]
             \coordinate
@@ -1795,10 +1823,14 @@ end
             \addplot+ table {daily_modulation.dat};
         \end{axis}
         \node[visible on = <2->]
-            at (3.0,-1) [align = center, below] {
-                Avainkysymyksiä:\\
-                Mitä päivittäinen vaihtelu kertoo pimän aineen vuorovaikutuksista/jakaumasta?\\
-                Auttaako päivittäinen vaihtelu pimeän aineen löytämisessä?};
+            at (3.0,-1) [visible on = <2->, align = center, below] {
+                Avainkysymyksiä:};
+        \node[visible on = <3->]
+            at (3.0,-1.4) [visible on = <3->, align = center, below] {
+                Mitä päivittäinen vaihtelu kertoo pimän aineen vuorovaikutuksista/jakaumasta?};
+        \node[visible on = <4->]
+            at (3.0,-1.8) [visible on = <4->, align = center, below] {
+                Auttaako päivittäinen vaihtelu pimeän aineen etsinnässä?};
     \end{tikzpicture}
 \end{frame}
 

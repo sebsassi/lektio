@@ -1,15 +1,15 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.17)  28 FEB 2025 18:23
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.23)  1 MAR 2025 16:51
  restricted system commands enabled.
 **lektio
 (./lektio.tex
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
 collection.
-luaotfload | conf : Root cache directory is "/home/wubuntu/.texlive2024/texmf-va
-r/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/seb/.texlive2024/texmf-var/lu
+atex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
 olved path "/usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-
 2023-12-28.lua".
@@ -20,8 +20,8 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/wubuntu/.texlive2024/texmf-va
-r/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/seb/.texlive2024/texmf-var/lu
+atex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -41,10 +41,10 @@ Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'. (/usr/local/texlive/202
 4/texmf-dist/tex/latex/beamer/beamer.cls
-Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
+Document Class: beamer 2025/02/04 v3.72 A class for typesetting presentations
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count194
 )
 \beamer@tempbox=\box52
@@ -60,7 +60,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \beamer@modecount=\count199
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 \headdp=\dimen140
 \footheight=\dimen141
@@ -202,8 +202,8 @@ erarithmetics.code.tex)
 \c@pgfmathroundto@lastzeros=\count294
 ))) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/wubuntu/.texlive2024/tex
-mf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /home/seb/.texlive2024/texmf-v
+ar/luatex-cache/generic/names/luaotfload-names.luc.gz)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -935,8 +935,8 @@ File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/11/08 v24.13 The multilingual framework for pdfLaTeX, LuaLa
-TeX and XeLaTeX
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/luababel.def
 \bbl@readstream=\read3
@@ -948,93 +948,94 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \l@german-x-2024-02-28=\language6
 \l@ngerman-x-2024-02-28=\language7
 \l@afrikaans=\language8
-\l@ancientgreek=\language9
-\l@ibycus=\language10
-\l@arabic=\language11
-\l@armenian=\language12
-\l@basque=\language13
-\l@belarusian=\language14
-\l@bulgarian=\language15
-\l@catalan=\language16
-\l@pinyin=\language17
-\l@churchslavonic=\language18
-\l@coptic=\language19
-\l@croatian=\language20
-\l@czech=\language21
-\l@danish=\language22
-\l@dutch=\language23
-\l@ukenglish=\language24
-\l@usenglishmax=\language25
-\l@esperanto=\language26
-\l@estonian=\language27
-\l@ethiopic=\language28
-\l@farsi=\language29
-\l@finnish=\language30
-\l@schoolfinnish=\language31
-\l@french=\language32
-\l@friulan=\language33
-\l@galician=\language34
-\l@georgian=\language35
-\l@german=\language36
-\l@ngerman=\language37
-\l@swissgerman=\language38
-\l@greek=\language39
-\l@monogreek=\language40
-\l@hungarian=\language41
-\l@icelandic=\language42
-\l@assamese=\language43
-\l@bengali=\language44
-\l@gujarati=\language45
-\l@hindi=\language46
-\l@kannada=\language47
-\l@malayalam=\language48
-\l@marathi=\language49
-\l@oriya=\language50
-\l@pali=\language51
-\l@panjabi=\language52
-\l@tamil=\language53
-\l@telugu=\language54
-\l@indonesian=\language55
-\l@interlingua=\language56
-\l@irish=\language57
-\l@italian=\language58
-\l@kurmanji=\language59
-\l@classiclatin=\language60
-\l@latin=\language61
-\l@liturgicallatin=\language62
-\l@latvian=\language63
-\l@lithuanian=\language64
-\l@macedonian=\language65
-\l@mongolian=\language66
-\l@mongolianlmc=\language67
-\l@bokmal=\language68
-\l@nynorsk=\language69
-\l@occitan=\language70
-\l@piedmontese=\language71
-\l@polish=\language72
-\l@portuguese=\language73
-\l@romanian=\language74
-\l@romansh=\language75
-\l@russian=\language76
-\l@sanskrit=\language77
-\l@serbian=\language78
-\l@serbianc=\language79
-\l@slovak=\language80
-\l@slovenian=\language81
-\l@spanish=\language82
-\l@swedish=\language83
-\l@thai=\language84
-\l@turkish=\language85
-\l@turkmen=\language86
-\l@ukrainian=\language87
-\l@uppersorbian=\language88
-\l@welsh=\language89
+\l@albanian=\language9
+\l@ancientgreek=\language10
+\l@ibycus=\language11
+\l@arabic=\language12
+\l@armenian=\language13
+\l@basque=\language14
+\l@belarusian=\language15
+\l@bulgarian=\language16
+\l@catalan=\language17
+\l@pinyin=\language18
+\l@churchslavonic=\language19
+\l@coptic=\language20
+\l@croatian=\language21
+\l@czech=\language22
+\l@danish=\language23
+\l@dutch=\language24
+\l@ukenglish=\language25
+\l@usenglishmax=\language26
+\l@esperanto=\language27
+\l@estonian=\language28
+\l@ethiopic=\language29
+\l@farsi=\language30
+\l@finnish=\language31
+\l@schoolfinnish=\language32
+\l@french=\language33
+\l@friulan=\language34
+\l@galician=\language35
+\l@georgian=\language36
+\l@german=\language37
+\l@ngerman=\language38
+\l@swissgerman=\language39
+\l@greek=\language40
+\l@monogreek=\language41
+\l@hungarian=\language42
+\l@icelandic=\language43
+\l@assamese=\language44
+\l@bengali=\language45
+\l@gujarati=\language46
+\l@hindi=\language47
+\l@kannada=\language48
+\l@malayalam=\language49
+\l@marathi=\language50
+\l@oriya=\language51
+\l@pali=\language52
+\l@panjabi=\language53
+\l@tamil=\language54
+\l@telugu=\language55
+\l@indonesian=\language56
+\l@interlingua=\language57
+\l@irish=\language58
+\l@italian=\language59
+\l@kurmanji=\language60
+\l@classiclatin=\language61
+\l@latin=\language62
+\l@liturgicallatin=\language63
+\l@latvian=\language64
+\l@lithuanian=\language65
+\l@macedonian=\language66
+\l@mongolian=\language67
+\l@mongolianlmc=\language68
+\l@bokmal=\language69
+\l@nynorsk=\language70
+\l@occitan=\language71
+\l@piedmontese=\language72
+\l@polish=\language73
+\l@portuguese=\language74
+\l@romanian=\language75
+\l@romansh=\language76
+\l@russian=\language77
+\l@sanskrit=\language78
+\l@serbian=\language79
+\l@serbianc=\language80
+\l@slovak=\language81
+\l@slovenian=\language82
+\l@spanish=\language83
+\l@swedish=\language84
+\l@thai=\language85
+\l@turkish=\language86
+\l@turkmen=\language87
+\l@ukrainian=\language88
+\l@uppersorbian=\language89
+\l@welsh=\language90
 \babelcatcodetablenum=\catcodetable15
 \bbl@pattcodes=\catcodetable16
 )
 \babel@savecnt=\count359
 \U@D=\dimen321
-\l@unhyphenated=\language90
+\l@unhyphenated=\language91
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/luababel.def
 \bbl@attr@locale=\attribute4
@@ -1073,33 +1074,36 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
 \MT@toks=\toks58
 \MT@tempbox=\box83
 \MT@count=\count360
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
-LaTeX Info: Redefining \leftprotrusion on input line 1062.
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
 \MT@prot@toks=\toks59
-LaTeX Info: Redefining \rightprotrusion on input line 1081.
-LaTeX Info: Redefining \textls on input line 1392.
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen322
-LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count361
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-luatex.def
-File: microtype-luatex.def 2024/03/29 v3.1b Definitions specific to luatex (RS)
+File: microtype-luatex.def 2025/02/11 v3.2a Definitions specific to luatex (RS)
 
-Lua module: microtype 2024/03/29 v3.1b microtype module.
+Lua module: microtype 2025/02/11 v3.2a microtype module.
 Module microtype Info: overwriting function `keepligature' on input line 63
-LaTeX Info: Redefining \lsstyle on input line 693.
-LaTeX Info: Redefining \lslig on input line 693.
+LaTeX Info: Redefining \lsstyle on input line 779.
+LaTeX Info: Redefining \lslig on input line 779.
 \MT@outer@space=\skip66
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
-))
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/textgreek/textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
@@ -1346,7 +1350,7 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-11-02 L3 programming layer (loader) 
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 )
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 
@@ -1479,7 +1483,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip82
 \blx@bcfin=\read5
 \blx@bcfout=\write5
-\blx@langwohyphens=\language91
+\blx@langwohyphens=\language92
 \c@mincomprange=\count450
 \c@maxcomprange=\count451
 \c@mincompwidth=\count452
@@ -1642,7 +1646,7 @@ Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2024-11-02 L3 programming layer (loader) 
+(biblatex)             2025-01-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1708,8 +1712,8 @@ ts.decorations.softclip.code.tex))
 (./pgflibrarypgfplots.extracolormaps.code.tex
 File: pgflibrarypgfplots.extracolormaps.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-luaotfload | cache : Lookup cache loaded from /home/wubuntu/.texlive2024/texmf-v
-ar/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | cache : Lookup cache loaded from /home/seb/.texlive2024/texmf-var/l
+uatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NotoSans(0)' created for font 'Noto Sans'
@@ -1939,6 +1943,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/m/n on input line 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/NotoMono(1)/b/n on input line 189.
+luaotfload | aux : font no 47 (nil) defines no feature for script math
+
+Package fontspec Info: 
+(fontspec)             Script 'Math' not explicitly supported within font
+(fontspec)             'Noto Sans Math'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+luaotfload | aux : font no 47 (nil) defines no feature for script math
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
@@ -1958,6 +1971,24 @@ sFont={},Script=Math,RawFeature={mathfontdimen=xetex}].
 (fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
 etex;"
 
+luaotfload | aux : font no 50 (nil) defines no feature for script math
+
+Package unicode-math Warning: The first font loaded by unicode-math must be an
+(unicode-math)                OpenType Math font (with script=math). If you
+(unicode-math)                simply want ‘the default’ before loading
+(unicode-math)                supplementary fonts over the top for certain
+(unicode-math)                ranges, use: 
+(unicode-math)                  \setmathfont{latinmodern-math.otf}
+
+luaotfload | aux : font no 47 (nil) defines no feature for script math
+
+Package fontspec Info: 
+(fontspec)             Script 'Math' not explicitly supported within font
+(fontspec)             'Noto Sans Math'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+luaotfload | aux : font no 47 (nil) defines no feature for script math
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
@@ -1968,22 +1999,20 @@ Package fontspec Info:
 (fontspec)             Font family 'NotoSansMath(1)' created for font 'Noto
 (fontspec)             Sans Math' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=8.76-},{Size=6.0225-8.76,Font=Noto
-(fontspec)             Sans Math,Style=MathScript},{Size=-6.0225,Font=Noto
-(fontspec)             Sans
+sFont={},Script=Math,SizeFeatures={{Size=0-},{Size=0-0,Font=Noto
+(fontspec)             Sans Math,Style=MathScript},{Size=-0,Font=Noto Sans
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.76->"name:Noto
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <0->"name:Noto Sans
+(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
+etex;"<0-0>"name:Noto
 (fontspec)             Sans
 (fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;"<6.0225-8.76>"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;+ssty=0;"<-6.0225>"name:Noto
+etex;+ssty=0;"<-0>"name:Noto
 (fontspec)             Sans
 (fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
 etex;+ssty=1;"
@@ -1999,91 +2028,8 @@ LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/NotoSansMath(1)/b/n on input line 1
 90.
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'NotoSansMath(2)' created for font 'Noto
-(fontspec)             Sans Math' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=8.76-},{Size=6.0225-8.76,Font=Noto
-(fontspec)             Sans Math,Style=MathScript},{Size=-6.0225,Font=Noto
-(fontspec)             Sans
-(fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
-xetex},RawFeature={mathfontdimen=tex2}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.76->"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex2;"<6.0225-8.76>"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex2;+ssty=0;"<-6.0225>"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex2;+ssty=1;"
-
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 190.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/NotoSansMath(2)/m/n on input line 1
-90.
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 190.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/NotoSansMath(2)/b/n on input line 1
-90.
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Noto Sans Math/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'NotoSansMath(3)' created for font 'Noto
-(fontspec)             Sans Math' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
-sFont={},Script=Math,SizeFeatures={{Size=8.76-},{Size=6.0225-8.76,Font=Noto
-(fontspec)             Sans Math,Style=MathScript},{Size=-6.0225,Font=Noto
-(fontspec)             Sans
-(fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
-xetex},RawFeature={mathfontdimen=tex3}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.76->"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex3;"<6.0225-8.76>"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex3;+ssty=0;"<-6.0225>"name:Noto
-(fontspec)             Sans
-(fontspec)             Math:mode=base;script=math;language=dflt;mathfontdimen=x
-etex;mathfontdimen=tex3;+ssty=1;"
-
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-90.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/NotoSansMath(3)/m/n on input line 1
-90.
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 190
-.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/NotoSansMath(3)/b/n on input line 1
-90.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 190
 .
-
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -2248,6 +2194,7 @@ Package microtype Info: Applying patch `toc' on input line 568.
 Package microtype Info: Applying patch `eqnum' on input line 568.
 Package microtype Info: Applying patch `footnote' on input line 568.
 Package microtype Info: Applying patch `verbatim' on input line 568.
+LaTeX Info: Redefining \microtypesetup on input line 568.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2279,209 +2226,124 @@ Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
  input line 568.
 
-Package biblatex Info: Trying to load language 'finnish'...
-Package biblatex Info: ... file 'finnish.lbx' found.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/finnish.lbx
-File: finnish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
-)
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
 
-\openout5 = lektio.bcf
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'lektio.bbl' not found.
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-mat
+h.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
 
-No file lektio.bbl.
-Package biblatex Info: Reference section=0 on input line 568.
-Package biblatex Info: Reference segment=0 on input line 568.
-(./lektio.nav)
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `NotoSansMath' (encoding: TU).
+(microtype)             `latinmodern-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(1)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(2)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `TU/NotoSansMath(3)/m/n/5'.
-(microtype)             Ignoring protrusion settings for this character.
 
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
+odern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.ot
+f}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->"[latinmodern-math.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;"<6.57-9.3075>"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-6.57>"[latinmodern-m
+ath.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/NotoSansMath(1)/m/n --> TU/latinmodern-math.otf(1)/m
+/n on input line 568.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/NotoSansMath(1)/b/n --> TU/latinmodern-math.otf(1)/b
+/n on input line 568.
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
+odern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.ot
+f},RawFeature={mathfontdimen=tex2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->"[latinmodern-math.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<6.57-9.3075>"[latinmodern
+-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
+n=tex2;+ssty=0;"<-6.57>"[latinmodern-math.otf]:mode=base;script=math;language=d
+flt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 568.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 568.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 568.
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
+odern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=Ma
+thScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.ot
+f},RawFeature={mathfontdimen=tex3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->"[latinmodern-math.otf]:mode=base;script=math;l
+anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<6.57-9.3075>"[latinmodern
+-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
+n=tex3;+ssty=0;"<-6.57>"[latinmodern-math.otf]:mode=base;script=math;language=d
+flt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 5
+68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 568.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 568
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 568.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -2509,7 +2371,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSans' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Package biblatex Info: Trying to load language 'finnish'...
+Package biblatex Info: ... file 'finnish.lbx' found.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/finnish.lbx
+File: finnish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
 
+\openout5 = lektio.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'lektio.bbl' not found.
+
+No file lektio.bbl.
+Package biblatex Info: Reference section=0 on input line 568.
+Package biblatex Info: Reference segment=0 on input line 568.
+(./lektio.nav)
 
 [1
 
@@ -2763,7 +2642,7 @@ nsparent.png  used on input line 976.
 
 Missing character: There is no ` (U+0060) in font nullfont!
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1141
+Overfull \vbox (37.35744pt too high) detected at line 1169
  []
 
 
@@ -2771,7 +2650,7 @@ Overfull \vbox (37.35744pt too high) detected at line 1141
 [13
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1141
+Overfull \vbox (37.35744pt too high) detected at line 1169
  []
 
 
@@ -2779,7 +2658,7 @@ Overfull \vbox (37.35744pt too high) detected at line 1141
 [14
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1141
+Overfull \vbox (37.35744pt too high) detected at line 1169
  []
 
 
@@ -2787,7 +2666,7 @@ Overfull \vbox (37.35744pt too high) detected at line 1141
 [15
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1141
+Overfull \vbox (37.35744pt too high) detected at line 1169
  []
 
 
@@ -2795,68 +2674,76 @@ Overfull \vbox (37.35744pt too high) detected at line 1141
 [16
 
 ]
-<xenon_cryostat_render_fix.png, id=181, 496.29663pt x 794.33044pt>
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1401
-.
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-<edelweiss_bolo.jpg, id=182, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1401.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-<edelweiss_bolo_mask.png, id=184, 846.2817pt x 666.8112pt>
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1401.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+Overfull \vbox (37.35744pt too high) detected at line 1169
+ []
+
 
 
 [17
 
-<./edelweiss_bolo.jpg><./edelweiss_bolo_mask.png><./xenon_cryostat_render_fix.pn
-g>]
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1401
-.
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1401.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1401.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+]
+Overfull \vbox (37.35744pt too high) detected at line 1169
+ []
+
 
 
 [18
 
 ]
+<xenon_cryostat_render_fix.png, id=195, 496.29663pt x 794.33044pt>
 File: xenon_cryostat_render_fix.png Graphic file (type png)
 <use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1401
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
 .
 (luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+<edelweiss_bolo.jpg, id=196, 846.2817pt x 666.8112pt>
 File: edelweiss_bolo.jpg Graphic file (type jpg)
 <use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1401.
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
 (luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+<edelweiss_bolo_mask.png, id=198, 846.2817pt x 666.8112pt>
 File: edelweiss_bolo_mask.png Graphic file (type png)
 <use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1401.
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
 (luatex.def)             Requested size: 170.71652pt x 95.83366pt.
 
 
 [19
 
-]
+<./edelweiss_bolo.jpg><./edelweiss_bolo_mask.png><./xenon_cryostat_render_fix.pn
+g>]
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
+.
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+
 
 [20
 
 ]
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
+.
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+
 
 [21
 
@@ -2865,174 +2752,19 @@ Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1401.
 [22
 
 ]
-Package pgfplots info on input line 1579: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-PGFPlots: reading {star_map/horizontal_line_0.dat}
-PGFPlots: reading {star_map/horizontal_line_1.dat}
-PGFPlots: reading {star_map/horizontal_line_2.dat}
-PGFPlots: reading {star_map/horizontal_line_3.dat}
-PGFPlots: reading {star_map/horizontal_line_4.dat}
-PGFPlots: reading {star_map/vertical_line_0.dat}
-PGFPlots: reading {star_map/vertical_line_1.dat}
-PGFPlots: reading {star_map/vertical_line_2.dat}
-PGFPlots: reading {star_map/vertical_line_3.dat}
-PGFPlots: reading {star_map/vertical_line_4.dat}
-<esurf_Ge.png, id=246, 377.9721pt x 377.2494pt>
-File: esurf_Ge.png Graphic file (type png)
-<use esurf_Ge.png>
-Package luatex.def Info: esurf_Ge.png  used on input line 1579.
-(luatex.def)             Requested size: 365.24255pt x 365.26373pt.
-
 
 [23
 
-<./esurf_Ge.png>]
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 1 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 2 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 3 
-(type 'graphics'): plot handler does not support LUA.
-PGFPlots: reading {star_map/horizontal_line_0.dat}
-PGFPlots: reading {star_map/horizontal_line_1.dat}
-PGFPlots: reading {star_map/horizontal_line_2.dat}
-PGFPlots: reading {star_map/horizontal_line_3.dat}
-PGFPlots: reading {star_map/horizontal_line_4.dat}
-PGFPlots: reading {star_map/vertical_line_0.dat}
-PGFPlots: reading {star_map/vertical_line_1.dat}
-PGFPlots: reading {star_map/vertical_line_2.dat}
-PGFPlots: reading {star_map/vertical_line_3.dat}
-PGFPlots: reading {star_map/vertical_line_4.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-<transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png, id=255, 2267
-.8326pt x 2263.4964pt>
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png, id=256, 2267
-.8326pt x 2263.4964pt>
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png, id=257, 2267
-.8326pt x 2263.4964pt>
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png, id=258, 2267
-.8326pt x 2263.4964pt>
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-
+]
 
 [24
 
-
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-<./transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png><./transpare
-nt_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png><./transparent_direction
-al_event_SHM_0.5GeV_2025-03-07-00-59-59.png><./transparent_directional_event_SHM
-_0.5GeV_2025-03-07-03-00-00.png>]
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 1 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 2 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 3 
-(type 'graphics'): plot handler does not support LUA.
-PGFPlots: reading {star_map/horizontal_line_0.dat}
-PGFPlots: reading {star_map/horizontal_line_1.dat}
-PGFPlots: reading {star_map/horizontal_line_2.dat}
-PGFPlots: reading {star_map/horizontal_line_3.dat}
-PGFPlots: reading {star_map/horizontal_line_4.dat}
-PGFPlots: reading {star_map/vertical_line_0.dat}
-PGFPlots: reading {star_map/vertical_line_1.dat}
-PGFPlots: reading {star_map/vertical_line_2.dat}
-PGFPlots: reading {star_map/vertical_line_3.dat}
-PGFPlots: reading {star_map/vertical_line_4.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-
+]
 
 [25
 
-
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
 ]
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 1 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 2 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 3 
+Package pgfplots info on input line 1607: Using 'lua backend=false' for plot 0 
 (type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -3044,59 +2776,23 @@ PGFPlots: reading {star_map/vertical_line_1.dat}
 PGFPlots: reading {star_map/vertical_line_2.dat}
 PGFPlots: reading {star_map/vertical_line_3.dat}
 PGFPlots: reading {star_map/vertical_line_4.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1764.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+<esurf_Ge.png, id=267, 377.9721pt x 377.2494pt>
+File: esurf_Ge.png Graphic file (type png)
+<use esurf_Ge.png>
+Package luatex.def Info: esurf_Ge.png  used on input line 1607.
+(luatex.def)             Requested size: 365.24255pt x 365.26373pt.
 
 
 [26
 
-
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-]
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 0 
+<./esurf_Ge.png>]
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 1 
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 2 
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1764: Using 'lua backend=false' for plot 3 
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
 (type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -3120,29 +2816,37 @@ PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
 PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
 PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
 PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+<transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png, id=276, 2267
+.8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1764.
+-00-00.png  used on input line 1792.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+<transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png, id=277, 2267
+.8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1764.
+-00-00.png  used on input line 1792.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+<transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png, id=278, 2267
+.8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1764.
+-59-59.png  used on input line 1792.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+<transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png, id=279, 2267
+.8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1764.
+-00-00.png  used on input line 1792.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
@@ -3153,17 +2857,224 @@ Missing character: There is no ` (U+0060) in font nullfont!
 Missing character: There is no ` (U+0060) in font nullfont!
 Missing character: There is no ` (U+0060) in font nullfont!
 Missing character: There is no ` (U+0060) in font nullfont!
-]
-PGFPlots: reading {daily_modulation.dat}
+<./transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png><./transpare
+nt_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png><./transparent_direction
+al_event_SHM_0.5GeV_2025-03-07-00-59-59.png><./transparent_directional_event_SHM
+_0.5GeV_2025-03-07-03-00-00.png>]
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
+-59-59.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
 [28
 
+
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+]
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
+-59-59.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+
+
+[29
+
+
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+]
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
+-59-59.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
+-00-00.png  used on input line 1792.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+
+
+[30
+
+
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
 ]
 PGFPlots: reading {daily_modulation.dat}
 
 
-[29
+[31
+
+]
+PGFPlots: reading {daily_modulation.dat}
+
+
+[32
+
+]
+PGFPlots: reading {daily_modulation.dat}
+
+
+[33
+
+]
+PGFPlots: reading {daily_modulation.dat}
+
+
+[34
 
 ]
 \tf@nav=\write7
@@ -3177,8 +3088,8 @@ PGFPlots: reading {daily_modulation.dat}
 \openout9 = lektio.snm
  (./lektio.aux)
  ***********
-LaTeX2e <2024-11-01>
-L3 programming layer <2024-11-02>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 
 
@@ -3192,23 +3103,23 @@ Package logreq Info: Writing requests to 'lektio.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 65651 strings out of 475664
+ 65846 strings out of 475512
  125016,3417909 words of node,token memory allocated
- 10460 words of node memory still in use:
-   100 hlist, 11 vlist, 12 rule, 47 disc, 3 local_par, 226 glue, 8 kern, 10 pena
-lty, 249 glyph, 1192 attribute, 75 glue_spec, 622 attribute_list, 4 write, 394 p
-df_literal, 40 pdf_colorstack nodes
-   avail lists: 1:9,2:23158,3:10663,4:398,5:59,6:22,7:2308,8:1,9:1141,10:5,11:10
-0
- 85947 multiletter control sequences out of 65536+600000
- 125 fonts using 42434859 bytes
+ 10772 words of node memory still in use:
+   108 hlist, 9 vlist, 12 rule, 46 disc, 3 local_par, 233 glue, 7 kern, 10 penal
+ty, 246 glyph, 1256 attribute, 75 glue_spec, 654 attribute_list, 4 write, 412 pd
+f_literal, 40 pdf_colorstack nodes
+   avail lists: 1:11,2:23062,3:10645,4:398,5:60,6:22,7:2491,8:1,9:1207,10:5,11:9
+8
+ 86263 multiletter control sequences out of 65536+600000
+ 150 fonts using 39459167 bytes
  128i,14n,116p,1178b,2500s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/fonts/truetype/noto/NotoSansMath-Regular.ttf></usr/share/fonts/truet
-ype/noto/NotoSans-VariableFont_wdth,wght.ttf>
-Output written on lektio.pdf (29 pages, 16809347 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
+th.otf></usr/share/fonts/truetype/noto/NotoSans-Regular.ttf>
+Output written on lektio.pdf (34 pages, 16815445 bytes).
 
-PDF statistics: 325 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 131072)
+PDF statistics: 362 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 131072)
  346 words of extra memory for PDF output out of 10000 (max. 100000000)
 
