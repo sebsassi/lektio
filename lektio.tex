@@ -493,10 +493,13 @@ end
       \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
     },
     shade color on/.code args = {<#1>#2!#3}{
-        \alt<#1>{\pgfkeysalso{color=#2!#3!black}}{\pgfkeysalso{color=#2}}
+        \alt<#1>{\pgfkeysalso{color = #2!#3!black}}{\pgfkeysalso{color = #2}}
     },
     tint color on/.code args = {<#1>#2!#3}{
-        \alt<#1>{\pgfkeysalso{color=#2!#3!white}}{\pgfkeysalso{color=#2}}
+        \alt<#1>{\pgfkeysalso{color = #2!#3!white}}{\pgfkeysalso{color = #2}}
+    },
+    path fading on/.code args = {<#1>#2}{
+        \alt<#1>{\pgfkeysalso{path fading = #2}}{\pgfkeysalso{opacity = 0}}
     }
 }
 
@@ -580,6 +583,7 @@ end
         \item Pimeä aine ei säteile. Se voidaan havaita vain sen painovoiman kautta.
     \end{itemize}
     }
+    \begin{center}
     \begin{tikzpicture}
         %\filldraw[
         %        very thick,
@@ -638,6 +642,7 @@ end
                 Pimeää ainetta};
         \end{scope}
     \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -752,6 +757,8 @@ end
             -stealth
         }
     ]
+        \node (cheeky offset) at (-4,0) {};
+
         % panel 1
         \coordinate (dm halo) at (0,0);
         \begin{scope}[visible on = <1->]
@@ -810,7 +817,7 @@ end
         \coordinate (sun) at (6cm,-4cm);
         \begin{scope}[visible on = <3->]
             \node[inner sep = 0pt] at (sun) {
-                \includegraphics[width = 0.8cm]{sun_transparent.png}};
+                \includegraphics[width = 1.4cm]{alt_sun_transparent_bright.png}};
             \draw[very thin, white!30!transparent]
                 (sun) circle [radius = 1.3cm];
             \draw[speed arrow]
@@ -880,6 +887,7 @@ end
             \item Pimeä aine tulee maata kohti Joutsenen tähdistön suunnalta
         \end{itemize}
     }
+    \begin{center}
     \begin{tikzpicture}[
         small circle/.style = {radius = 1pt},
         constellation/.style = {
@@ -968,11 +976,12 @@ end
                         align = center,
                         left,
                         font = \footnotesize] {
-                    Maan liikkeen suunta\\ galaksin suhteen};
+                    Maan liikkeen suunta};
             \draw[visible on = <1>, -stealth]
                 (annot) to [out = 0, in = 90] (dm wind);
         \end{axis}
     \end{tikzpicture}
+\end{center}
 \end{frame}
 
 \tikzset
@@ -1045,80 +1054,109 @@ end
         \end{itemize}
     \end{itemize}
     }
+    \begin{center}
     \begin{tikzpicture}[
         scatter arrow/.style = {thick, -stealth}
     ]
         \begin{scope}
             \coordinate
-                (atom1) at (0,0);
+                (atom11) at (0,0);
             \coordinate
-                (atom2) at (0,-3);
+                (atom12) at (2,0);
+            \coordinate
+                (atom2) at (6,0);
             
             % electron clouds
             \fill[
-                visible on = <2->,
-                yellow!80!white,
-                path fading = electron cloud]
-            (atom2) circle [radius=3.0cm];
-            \fill[visible on = <1>, \defaultbgcolor]
-                (atom2) circle [radius = 3.0cm];
-            \fill[
-                    visible on = <1->,
                     yellow!80!white,
-                    path fading = electron cloud]
-                (atom1) circle [radius=3.0cm];
-            \fill[visible on = <1>, \defaultbgcolor]
-                (atom1) circle [radius = 3.0cm];
+                    path fading on = <2->electron cloud]
+                (atom2) circle [radius=3.0cm];
+            \fill[
+                    yellow!80!white,
+                    path fading on = <3->electron cloud]
+                (atom12) circle [radius=3.0cm];
+            \fill[
+                    yellow!80!white,
+                    path fading on = <2>electron cloud]
+                (atom11) circle [radius=3.0cm];
             
             % nuclei
-            \node[visible on = <1->, circle, minimum size = 1.0cm]
-                (atom1 node) at (atom1) {}
-                pic [scale = 0.4] {nucleus};
-            \node[visible on = <2->, circle, minimum size = 1.0cm]
+            \node[circle, minimum size = 1.0cm]
+                (atom11 node) at (atom11) {}
+                pic [
+                        visible on = <1-2>,
+                        shift = {(atom11)},
+                        scale = 0.4] {
+                    nucleus};
+            \node[circle, minimum size = 1.0cm]
+                (atom12 node) at (atom12) {}
+                pic [
+                        visible on = <3->,
+                        shift = {(atom12)},
+                        scale = 0.4] {
+                    nucleus};
+            \node[circle, minimum size = 1.0cm]
                 (atom2 node) at (atom2) {}
-                pic [visible on = <2->, shift = {(atom2)}, scale = 0.4] {nucleus};
+                pic [
+                        visible on = <2->,
+                        shift = {(atom2)},
+                        scale = 0.4] {
+                    nucleus};
             
             % annotations
-            \node[visible on = <2->]
-                at (-2.0cm,0) [font = \scriptsize] {
+            \node[visible on = <2>]
+                at ($(atom11) + (0,-2)$) [font = \scriptsize] {
                     elektronipilvi};
-            \node[visible on = <1->]
-                at (0,0) [
-                        right = 0.3cm,
-                        font = \scriptsize,
-                        anchor = west] {
+            \node[visible on = <3->]
+                at ($(atom12) + (0,-2)$) [font = \scriptsize] {
+                    elektronipilvi};
+            \node[visible on = <1-2>]
+                at (atom11) [
+                        above = 0.3cm,
+                        font = \scriptsize] {
+                    atomiydin};
+            \node[visible on = <3->]
+                at (atom12) [
+                        above = 0.3cm,
+                        font = \scriptsize] {
                     atomiydin};
                 
             % dm
             \node[visible on = <1->, circle, ball color = black!70!white]
-                (dm) at (145:3.0cm) {};
+                (dm) at ($(atom11) + (145:3.0cm)$) {};
             \node[visible on = <1->]
-                at (145:3.0cm) [above right, font = \scriptsize] {
+                at ($(atom11) + (145:3.0cm)$) [
+                        above right,
+                        font = \scriptsize] {
                     pimeä aine};
             
             \draw[visible on = <1->, scatter arrow]
-                (35:3.0cm) -- (atom1 node.north) -- (dm);
-            \draw[visible on = <1->, scatter arrow]
-                (atom1 node.south) -- (atom2 node.north);
-            \coordinate
-                (ionize base) at ($(atom1) + (1.0,-1.5)$);
-            \node[visible on = <3->, circle, minimum size=0.3cm]
-                (ionize) at ($(ionize base) + (-10:1)$) {};
-            \pic at (ionize) [visible on = <3->, very thick, scale = 0.4] {
-                    electron};
+                ($(atom11) + (-145:3.0cm)$) -- (atom11 node.west) -- (dm);
+            \draw[visible on = <1-2>, scatter arrow]
+                (atom11 node.east) -- (atom2 node.west);
             \draw[visible on = <3->, scatter arrow]
-                (ionize base) -- (ionize);
-                
-            \node[visible on = <3->]
-                at (ionize) [below right, font = \scriptsize] {
-                    elektroni};
+                (atom12 node.east) -- (atom2 node.west);
+            
             \coordinate
-                (light base) at ($(atom1) + (-0.9,-1.6)$);
+                (ionize base) at ($(atom12) + (1.5,0.4)$);
+            \node[visible on = <4->, circle, minimum size=0.3cm]
+                (ionize) at ($(ionize base) + (80:1)$) {};
+            \pic at (ionize) [visible on = <4->, very thick, scale = 0.4] {
+                    electron};
+            \draw[visible on = <4->, scatter arrow]
+                (ionize base) -- (ionize);
+            \node[visible on = <4->]
+                at (ionize) [above right, font = \scriptsize] {
+                    elektroni};
+            
+            \coordinate
+                (light base) at ($(atom12) + (1.4,-0.4)$);
             \draw[visible on = <4->, photon]
-                (light base) -- +(-170:1)
-                node [above, sloped, pos = 0.5, font = \scriptsize] {
+                (light base) -- +(-80:1)
+                node [right, font = \scriptsize] {
                     valoa};
         \end{scope}
+        \nothing{
         \begin{axis}[
             visible on = <5->,
             at = {(4cm,-0.5cm)},
@@ -1165,7 +1203,9 @@ end
                 node [sloped, pos = 0.5, below, font = \scriptsize]{
                     Energia};
         \end{axis}
+        }
     \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \nothing
@@ -1214,8 +1254,8 @@ end
             \item Vaihtoehtona kiinteät kristalliset kohdemateriaalit
         \end{itemize}
     }
-    \begin{tikzpicture} [
-    ]
+    \begin{center}
+    \begin{tikzpicture}
         % Xenon tank
         \begin{scope}[
             visible on = <1->,
@@ -1268,7 +1308,7 @@ end
         % Germanium crystal
         \begin{scope}[
             visible on = <2->,
-            shift = {(6.0cm,1.5cm)}
+            shift = {(7.0cm,1.5cm)}
         ]
             \coordinate
                 (crystal) at (0, 0);
@@ -1294,7 +1334,7 @@ end
         % Germanium cut
         \begin{scope}[
             visible on = <3->,
-            shift = {(6.0cm,-1.5cm)},
+            shift = {(7.0cm,-1.5cm)},
             germanium block draw/.style = {draw = white},
             germanium block fill/.style = {fill = black!85!white},
         ]
@@ -1426,10 +1466,12 @@ end
             }
         \end{scope}
     \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Kidevirheet}
+    \begin{center}
     \begin{tikzpicture}[
         background atom/.style = {ball color = scp-blue-light-2},
         hit atom/.style = {ball color = scp-blue-dark-1},
@@ -1548,6 +1590,7 @@ end
             \end{scope}
         \end{scope}
     \end{tikzpicture}
+    \end{center}
     \nothing
     {
         \begin{itemize}
@@ -1559,6 +1602,7 @@ end
 
 \begin{frame}
     \frametitle{Virhe-energian suuntariippuvuus}
+    \begin{center}
     \begin{tikzpicture}[
         grid line/.style = {
             mark = none,
@@ -1604,6 +1648,7 @@ end
                 (0,0) circle [radius=2];
         \end{axis}
     \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -1613,6 +1658,7 @@ end
             \item Pimeä aine tulee maata kohti Joutsenen tähdistön suunnalta
         \end{itemize}
     }
+    \begin{center}
     \begin{tikzpicture}[
         small circle/.style = {radius = 1pt},
         constellation/.style = {
@@ -1789,6 +1835,7 @@ end
             \end{scope}
         \end{axis}
     \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \begin{frame}

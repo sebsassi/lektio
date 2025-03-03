@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.23)  1 MAR 2025 16:51
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.23)  3 MAR 2025 17:36
  restricted system commands enabled.
 **lektio
 (./lektio.tex
@@ -2069,34 +2069,34 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./lektio.aux)
 \openout1 = lektio.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 568.
-LaTeX Font Info:    ... okay on input line 568.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 568.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 571.
+LaTeX Font Info:    ... okay on input line 571.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 571.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 5
-68.
+71.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 568.
+LaTeX Font Info:    ... okay on input line 571.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2154,7 +2154,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 568.
+Package hyperref Info: Link coloring ON on input line 571.
 
 (./lektio.out) (./lektio.out)
 \@outlinefile=\write6
@@ -2188,20 +2188,20 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Info: Redefining \microtypecontext on input line 568.
-Package microtype Info: Applying patch `item' on input line 568.
-Package microtype Info: Applying patch `toc' on input line 568.
-Package microtype Info: Applying patch `eqnum' on input line 568.
-Package microtype Info: Applying patch `footnote' on input line 568.
-Package microtype Info: Applying patch `verbatim' on input line 568.
-LaTeX Info: Redefining \microtypesetup on input line 568.
+LaTeX Info: Redefining \microtypecontext on input line 571.
+Package microtype Info: Applying patch `item' on input line 571.
+Package microtype Info: Applying patch `toc' on input line 571.
+Package microtype Info: Applying patch `eqnum' on input line 571.
+Package microtype Info: Applying patch `footnote' on input line 571.
+Package microtype Info: Applying patch `verbatim' on input line 571.
+LaTeX Info: Redefining \microtypesetup on input line 571.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 568.
+LaTeX Info: Redefining \showhyphens on input line 571.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -2212,19 +2212,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/NotoSans(2)/m/n --> TS1/NotoSans(2)/b/n on input li
-ne 568.
-Package gensymb Info: Math companion symbols declared on input line 568.
-LaTeX Info: Redefining \degree on input line 568.
-LaTeX Info: Redefining \celsius on input line 568.
+ne 571.
+Package gensymb Info: Math companion symbols declared on input line 571.
+LaTeX Info: Redefining \degree on input line 571.
+LaTeX Info: Redefining \celsius on input line 571.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 568.
-LaTeX Info: Redefining \ohm on input line 568.
-Package gensymb Info: Using \textohm for \ohm on input line 568.
-Package gensymb Info: Using \textmu for \micro on input line 568.
+erthousand on input line 571.
+LaTeX Info: Redefining \ohm on input line 571.
+Package gensymb Info: Using \textohm for \ohm on input line 571.
+Package gensymb Info: Using \textmu for \micro on input line 571.
 
 Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
- input line 568.
+ input line 571.
 
 
 Package fontspec Info: 
@@ -2272,10 +2272,10 @@ e=dflt;mathfontdimen=xetex;"
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/NotoSansMath(1)/m/n --> TU/latinmodern-math.otf(1)/m
-/n on input line 568.
+/n on input line 571.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/NotoSansMath(1)/b/n --> TU/latinmodern-math.otf(1)/b
-/n on input line 568.
+/n on input line 571.
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(2)' created for font
@@ -2300,15 +2300,15 @@ flt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
 e=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 568.
+(Font)              `symbols' in the math version `normal' on input line 571.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 568.
+t line 571.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 568.
+(Font)              `symbols' in the math version `bold' on input line 571.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 568.
+t line 571.
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(3)' created for font
@@ -2334,16 +2334,16 @@ e=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 5
-68.
+71.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 568.
+t line 571.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 568
+(Font)              `largesymbols' in the math version `bold' on input line 571
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 568.
+t line 571.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -2360,12 +2360,12 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+NotoSans(2) on inpu
-t line 568.
-LaTeX Font Info:    No file TS1NotoSans(2).fd. on input line 568.
+t line 571.
+LaTeX Font Info:    No file TS1NotoSans(2).fd. on input line 571.
 
 
 LaTeX Font Warning: Font shape `TS1/NotoSans(2)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead on input line 568.
+(Font)              using `TS1/cmr/m/n' instead on input line 571.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSans' (encoding: TS1).
@@ -2386,8 +2386,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lektio.bbl' not found.
 
 No file lektio.bbl.
-Package biblatex Info: Reference section=0 on input line 568.
-Package biblatex Info: Reference segment=0 on input line 568.
+Package biblatex Info: Reference section=0 on input line 571.
+Package biblatex Info: Reference segment=0 on input line 571.
 (./lektio.nav)
 
 [1
@@ -2409,12 +2409,12 @@ Package biblatex Info: Reference segment=0 on input line 568.
 File: milky_way_2_transparent_small.png Graphic file (type png)
 <use milky_way_2_transparent_small.png>
 Package luatex.def Info: milky_way_2_transparent_small.png  used on input line 
-712.
+717.
 (luatex.def)             Requested size: 227.62204pt x 227.62964pt.
 PGFPlots: reading {rotation_visible.csv}
 PGFPlots: reading {rotation_dark.csv}
 
-Overfull \vbox (8.90472pt too high) detected at line 712
+Overfull \vbox (8.90472pt too high) detected at line 717
  []
 
 
@@ -2425,12 +2425,12 @@ Overfull \vbox (8.90472pt too high) detected at line 712
 File: milky_way_2_transparent_small.png Graphic file (type png)
 <use milky_way_2_transparent_small.png>
 Package luatex.def Info: milky_way_2_transparent_small.png  used on input line 
-712.
+717.
 (luatex.def)             Requested size: 227.62204pt x 227.62964pt.
 PGFPlots: reading {rotation_visible.csv}
 PGFPlots: reading {rotation_dark.csv}
 
-Overfull \vbox (8.90472pt too high) detected at line 712
+Overfull \vbox (8.90472pt too high) detected at line 717
  []
 
 
@@ -2442,69 +2442,71 @@ Overfull \vbox (8.90472pt too high) detected at line 712
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 142.26378pt x 142.26576pt.
-<sun_transparent.png, id=88, 758.835pt x 715.67375pt>
-File: sun_transparent.png Graphic file (type png)
-<use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 874.
-(luatex.def)             Requested size: 22.76228pt x 21.45836pt.
+<alt_sun_transparent_bright.png, id=88, 664.884pt x 646.0938pt>
+File: alt_sun_transparent_bright.png Graphic file (type png)
+<use alt_sun_transparent_bright.png>
+Package luatex.def Info: alt_sun_transparent_bright.png  used on input line 881
+.
+(luatex.def)             Requested size: 39.83368pt x 38.7048pt.
 <earth_transparent_small.png, id=89, 595.47469pt x 595.47469pt>
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 68.28644pt x 68.28279pt.
 
-Overfull \vbox (5.68503pt too high) detected at line 874
+Overfull \vbox (5.68503pt too high) detected at line 881
  []
 
 
 
 [7
 
-<./milky_way_transparent_crop_small.png><./sun_transparent.png><./earth_transpar
-ent_small.png>]
+<./milky_way_transparent_crop_small.png><./alt_sun_transparent_bright.png><./ear
+th_transparent_small.png>]
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 142.26378pt x 142.26576pt.
-File: sun_transparent.png Graphic file (type png)
-<use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 874.
-(luatex.def)             Requested size: 22.76228pt x 21.45836pt.
+File: alt_sun_transparent_bright.png Graphic file (type png)
+<use alt_sun_transparent_bright.png>
+Package luatex.def Info: alt_sun_transparent_bright.png  used on input line 881
+.
+(luatex.def)             Requested size: 39.83368pt x 38.7048pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 68.28644pt x 68.28279pt.
 
-Overfull \vbox (5.68503pt too high) detected at line 874
+Overfull \vbox (5.68503pt too high) detected at line 881
  []
 
 
@@ -2515,31 +2517,32 @@ Overfull \vbox (5.68503pt too high) detected at line 874
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 142.26378pt x 142.26576pt.
-File: sun_transparent.png Graphic file (type png)
-<use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 874.
-(luatex.def)             Requested size: 22.76228pt x 21.45836pt.
+File: alt_sun_transparent_bright.png Graphic file (type png)
+<use alt_sun_transparent_bright.png>
+Package luatex.def Info: alt_sun_transparent_bright.png  used on input line 881
+.
+(luatex.def)             Requested size: 39.83368pt x 38.7048pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 68.28644pt x 68.28279pt.
 
-Overfull \vbox (5.68503pt too high) detected at line 874
+Overfull \vbox (5.68503pt too high) detected at line 881
  []
 
 
@@ -2550,31 +2553,32 @@ Overfull \vbox (5.68503pt too high) detected at line 874
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 42.67912pt x 42.67642pt.
 File: milky_way_transparent_crop_small.png Graphic file (type png)
 <use milky_way_transparent_crop_small.png>
 Package luatex.def Info: milky_way_transparent_crop_small.png  used on input li
-ne 874.
+ne 881.
 (luatex.def)             Requested size: 142.26378pt x 142.26576pt.
-File: sun_transparent.png Graphic file (type png)
-<use sun_transparent.png>
-Package luatex.def Info: sun_transparent.png  used on input line 874.
-(luatex.def)             Requested size: 22.76228pt x 21.45836pt.
+File: alt_sun_transparent_bright.png Graphic file (type png)
+<use alt_sun_transparent_bright.png>
+Package luatex.def Info: alt_sun_transparent_bright.png  used on input line 881
+.
+(luatex.def)             Requested size: 39.83368pt x 38.7048pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 14.22636pt x 14.2199pt.
 File: earth_transparent_small.png Graphic file (type png)
 <use earth_transparent_small.png>
-Package luatex.def Info: earth_transparent_small.png  used on input line 874.
+Package luatex.def Info: earth_transparent_small.png  used on input line 881.
 (luatex.def)             Requested size: 68.28644pt x 68.28279pt.
 
-Overfull \vbox (5.68503pt too high) detected at line 874
+Overfull \vbox (5.68503pt too high) detected at line 881
  []
 
 
@@ -2582,7 +2586,7 @@ Overfull \vbox (5.68503pt too high) detected at line 874
 [10
 
 ]
-Package pgfplots info on input line 976: Using 'lua backend=false' for plot 0 (
+Package pgfplots info on input line 985: Using 'lua backend=false' for plot 0 (
 type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -2604,7 +2608,7 @@ File: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png Graphi
 c file (type png)
 <use directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png>
 Package luatex.def Info: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_tra
-nsparent.png  used on input line 976.
+nsparent.png  used on input line 985.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
@@ -2613,7 +2617,7 @@ nsparent.png  used on input line 976.
 
 Missing character: There is no ` (U+0060) in font nullfont!
 <./directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png>]
-Package pgfplots info on input line 976: Using 'lua backend=false' for plot 0 (
+Package pgfplots info on input line 985: Using 'lua backend=false' for plot 0 (
 type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -2633,7 +2637,7 @@ File: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png Graphi
 c file (type png)
 <use directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_transparent.png>
 Package luatex.def Info: directional_scatter_SHM_0.5GeV_2025-03-06-21-00-00_tra
-nsparent.png  used on input line 976.
+nsparent.png  used on input line 985.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
@@ -2642,47 +2646,63 @@ nsparent.png  used on input line 976.
 
 Missing character: There is no ` (U+0060) in font nullfont!
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1169
- []
-
-
 
 [13
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1169
- []
-
-
 
 [14
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1169
- []
-
-
 
 [15
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1169
- []
-
-
 
 [16
 
 ]
-Overfull \vbox (37.35744pt too high) detected at line 1169
+<xenon_cryostat_render_fix.png, id=181, 496.29663pt x 794.33044pt>
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1470
+.
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+<edelweiss_bolo.jpg, id=182, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1470.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+<edelweiss_bolo_mask.png, id=184, 846.2817pt x 666.8112pt>
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1470.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+
+Overfull \vbox (5.55023pt too high) detected at line 1470
  []
 
 
 
 [17
 
-]
-Overfull \vbox (37.35744pt too high) detected at line 1169
+<./edelweiss_bolo.jpg><./edelweiss_bolo_mask.png><./xenon_cryostat_render_fix.pn
+g>]
+File: xenon_cryostat_render_fix.png Graphic file (type png)
+<use xenon_cryostat_render_fix.png>
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1470
+.
+(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
+File: edelweiss_bolo.jpg Graphic file (type jpg)
+<use edelweiss_bolo.jpg>
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1470.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+File: edelweiss_bolo_mask.png Graphic file (type png)
+<use edelweiss_bolo_mask.png>
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1470.
+(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+
+Overfull \vbox (5.55023pt too high) detected at line 1470
  []
 
 
@@ -2690,60 +2710,32 @@ Overfull \vbox (37.35744pt too high) detected at line 1169
 [18
 
 ]
-<xenon_cryostat_render_fix.png, id=195, 496.29663pt x 794.33044pt>
 File: xenon_cryostat_render_fix.png Graphic file (type png)
 <use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
+Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1470
 .
 (luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-<edelweiss_bolo.jpg, id=196, 846.2817pt x 666.8112pt>
 File: edelweiss_bolo.jpg Graphic file (type jpg)
 <use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
+Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1470.
 (luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-<edelweiss_bolo_mask.png, id=198, 846.2817pt x 666.8112pt>
 File: edelweiss_bolo_mask.png Graphic file (type png)
 <use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
+Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1470.
 (luatex.def)             Requested size: 170.71652pt x 95.83366pt.
+
+Overfull \vbox (5.55023pt too high) detected at line 1470
+ []
+
 
 
 [19
 
-<./edelweiss_bolo.jpg><./edelweiss_bolo_mask.png><./xenon_cryostat_render_fix.pn
-g>]
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
-.
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-
+]
 
 [20
 
 ]
-File: xenon_cryostat_render_fix.png Graphic file (type png)
-<use xenon_cryostat_render_fix.png>
-Package luatex.def Info: xenon_cryostat_render_fix.png  used on input line 1429
-.
-(luatex.def)             Requested size: 113.81102pt x 182.14673pt.
-File: edelweiss_bolo.jpg Graphic file (type jpg)
-<use edelweiss_bolo.jpg>
-Package luatex.def Info: edelweiss_bolo.jpg  used on input line 1429.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-File: edelweiss_bolo_mask.png Graphic file (type png)
-<use edelweiss_bolo_mask.png>
-Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
-(luatex.def)             Requested size: 170.71652pt x 95.83366pt.
-
 
 [21
 
@@ -2756,15 +2748,7 @@ Package luatex.def Info: edelweiss_bolo_mask.png  used on input line 1429.
 [23
 
 ]
-
-[24
-
-]
-
-[25
-
-]
-Package pgfplots info on input line 1607: Using 'lua backend=false' for plot 0 
+Package pgfplots info on input line 1652: Using 'lua backend=false' for plot 0 
 (type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -2776,23 +2760,23 @@ PGFPlots: reading {star_map/vertical_line_1.dat}
 PGFPlots: reading {star_map/vertical_line_2.dat}
 PGFPlots: reading {star_map/vertical_line_3.dat}
 PGFPlots: reading {star_map/vertical_line_4.dat}
-<esurf_Ge.png, id=267, 377.9721pt x 377.2494pt>
+<esurf_Ge.png, id=253, 377.9721pt x 377.2494pt>
 File: esurf_Ge.png Graphic file (type png)
 <use esurf_Ge.png>
-Package luatex.def Info: esurf_Ge.png  used on input line 1607.
+Package luatex.def Info: esurf_Ge.png  used on input line 1652.
 (luatex.def)             Requested size: 365.24255pt x 365.26373pt.
 
 
-[26
+[24
 
 <./esurf_Ge.png>]
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 0 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 1 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 2 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 3 
 (type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -2816,41 +2800,41 @@ PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
 PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
 PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
 PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-<transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png, id=276, 2267
+<transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png, id=262, 2267
 .8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png, id=277, 2267
+<transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png, id=263, 2267
 .8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png, id=278, 2267
+<transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png, id=264, 2267
 .8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1792.
+-59-59.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-<transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png, id=279, 2267
+<transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png, id=265, 2267
 .8326pt x 2263.4964pt>
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
-[27
+[25
 
 
 Missing character: There is no ` (U+0060) in font nullfont!
@@ -2861,13 +2845,13 @@ Missing character: There is no ` (U+0060) in font nullfont!
 nt_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png><./transparent_direction
 al_event_SHM_0.5GeV_2025-03-07-00-59-59.png><./transparent_directional_event_SHM
 _0.5GeV_2025-03-07-03-00-00.png>]
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 0 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 1 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 2 
 (type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 3 
 (type 'graphics'): plot handler does not support LUA.
 PGFPlots: reading {star_map/horizontal_line_0.dat}
 PGFPlots: reading {star_map/horizontal_line_1.dat}
@@ -2895,25 +2879,153 @@ File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1792.
+-59-59.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
 file (type png)
 <use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
 Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1792.
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+
+
+[26
+
+
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+]
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 1 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 2 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 3 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
+-59-59.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+
+
+[27
+
+
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+Missing character: There is no ` (U+0060) in font nullfont!
+]
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 0 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 1 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 2 
+(type 'graphics'): plot handler does not support LUA.
+Package pgfplots info on input line 1839: Using 'lua backend=false' for plot 3 
+(type 'graphics'): plot handler does not support LUA.
+PGFPlots: reading {star_map/horizontal_line_0.dat}
+PGFPlots: reading {star_map/horizontal_line_1.dat}
+PGFPlots: reading {star_map/horizontal_line_2.dat}
+PGFPlots: reading {star_map/horizontal_line_3.dat}
+PGFPlots: reading {star_map/horizontal_line_4.dat}
+PGFPlots: reading {star_map/vertical_line_0.dat}
+PGFPlots: reading {star_map/vertical_line_1.dat}
+PGFPlots: reading {star_map/vertical_line_2.dat}
+PGFPlots: reading {star_map/vertical_line_3.dat}
+PGFPlots: reading {star_map/vertical_line_4.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
+PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
+PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
+-00-00.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
+-59-59.png  used on input line 1839.
+(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
+file (type png)
+<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
+Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
+-00-00.png  used on input line 1839.
 (luatex.def)             Requested size: 365.21373pt x 365.24072pt.
 
 
@@ -2925,133 +3037,17 @@ Missing character: There is no ` (U+0060) in font nullfont!
 Missing character: There is no ` (U+0060) in font nullfont!
 Missing character: There is no ` (U+0060) in font nullfont!
 ]
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
-(type 'graphics'): plot handler does not support LUA.
-PGFPlots: reading {star_map/horizontal_line_0.dat}
-PGFPlots: reading {star_map/horizontal_line_1.dat}
-PGFPlots: reading {star_map/horizontal_line_2.dat}
-PGFPlots: reading {star_map/horizontal_line_3.dat}
-PGFPlots: reading {star_map/horizontal_line_4.dat}
-PGFPlots: reading {star_map/vertical_line_0.dat}
-PGFPlots: reading {star_map/vertical_line_1.dat}
-PGFPlots: reading {star_map/vertical_line_2.dat}
-PGFPlots: reading {star_map/vertical_line_3.dat}
-PGFPlots: reading {star_map/vertical_line_4.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+PGFPlots: reading {daily_modulation.dat}
 
 
 [29
 
-
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
 ]
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 0 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 1 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 2 
-(type 'graphics'): plot handler does not support LUA.
-Package pgfplots info on input line 1792: Using 'lua backend=false' for plot 3 
-(type 'graphics'): plot handler does not support LUA.
-PGFPlots: reading {star_map/horizontal_line_0.dat}
-PGFPlots: reading {star_map/horizontal_line_1.dat}
-PGFPlots: reading {star_map/horizontal_line_2.dat}
-PGFPlots: reading {star_map/horizontal_line_3.dat}
-PGFPlots: reading {star_map/horizontal_line_4.dat}
-PGFPlots: reading {star_map/vertical_line_0.dat}
-PGFPlots: reading {star_map/vertical_line_1.dat}
-PGFPlots: reading {star_map/vertical_line_2.dat}
-PGFPlots: reading {star_map/vertical_line_3.dat}
-PGFPlots: reading {star_map/vertical_line_4.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-21-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-06-23-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-01-00.dat}
-PGFPlots: reading {star_map/constellation_Cygnus_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Major_2025-03-07-03-00.dat}
-PGFPlots: reading {star_map/constellation_Ursa-Minor_2025-03-07-03-00.dat}
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-21-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-21
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-06-23-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-06-23
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-00-59-59.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-00
--59-59.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
-File: transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png Graphic 
-file (type png)
-<use transparent_directional_event_SHM_0.5GeV_2025-03-07-03-00-00.png>
-Package luatex.def Info: transparent_directional_event_SHM_0.5GeV_2025-03-07-03
--00-00.png  used on input line 1792.
-(luatex.def)             Requested size: 365.21373pt x 365.24072pt.
+PGFPlots: reading {daily_modulation.dat}
 
 
 [30
 
-
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
-Missing character: There is no ` (U+0060) in font nullfont!
 ]
 PGFPlots: reading {daily_modulation.dat}
 
@@ -3063,18 +3059,6 @@ PGFPlots: reading {daily_modulation.dat}
 
 
 [32
-
-]
-PGFPlots: reading {daily_modulation.dat}
-
-
-[33
-
-]
-PGFPlots: reading {daily_modulation.dat}
-
-
-[34
 
 ]
 \tf@nav=\write7
@@ -3103,23 +3087,23 @@ Package logreq Info: Writing requests to 'lektio.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 65846 strings out of 475512
+ 65794 strings out of 475512
  125016,3417909 words of node,token memory allocated
  10772 words of node memory still in use:
    108 hlist, 9 vlist, 12 rule, 46 disc, 3 local_par, 233 glue, 7 kern, 10 penal
 ty, 246 glyph, 1256 attribute, 75 glue_spec, 654 attribute_list, 4 write, 412 pd
 f_literal, 40 pdf_colorstack nodes
-   avail lists: 1:11,2:23062,3:10645,4:398,5:60,6:22,7:2491,8:1,9:1207,10:5,11:9
+   avail lists: 1:11,2:23116,3:10654,4:404,5:60,6:22,7:2447,8:1,9:1467,10:5,11:9
 8
- 86263 multiletter control sequences out of 65536+600000
+ 86215 multiletter control sequences out of 65536+600000
  150 fonts using 39459167 bytes
- 128i,14n,116p,1178b,2500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,14n,116p,1178b,2562s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/share/fonts/truetype/noto/NotoSans-Regular.ttf>
-Output written on lektio.pdf (34 pages, 16815445 bytes).
+Output written on lektio.pdf (32 pages, 18165272 bytes).
 
-PDF statistics: 362 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 131072)
+PDF statistics: 348 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 131072)
  346 words of extra memory for PDF output out of 10000 (max. 100000000)
 
